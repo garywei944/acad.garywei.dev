@@ -25,6 +25,6 @@ main:
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-#  - name: CV
-#    url: uploads/resume.pdf
-#    weight: 70
+  - name: Resume
+    url: https://s3.us-east-1.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf
+    weight: 70
