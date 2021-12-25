@@ -10,24 +10,48 @@ headless: true
 weight: 30
 
 title: Skills
-subtitle:
+subtitle: Research and Academic skills
 
 # Showcase personal skills or business features.
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-- description: 90%
-  icon: r-project
+- description: Proficient
+  icon: python
   icon_pack: fab
-  name: R
-- description: 100%
-  icon: chart-line
+  name: Python
+- description: Proficient
+  icon: terminal
   icon_pack: fas
-  name: Statistics
-- description: 10%
-  icon: camera-retro
+  name: Bash
+- description: Proficient
+  icon: linux
+  icon_pack: fab
+  name: Linux
+- description: Intermediate
+  icon: node-js
+  icon_pack: fab
+  name: Full Stack
+- description: Intermediate
+  icon: unity
+  icon_pack: fab
+  name: Unity
+- description: Advanced
+  icon: overleaf
+  icon_pack: ai
+  name: LaTex
+- description: Proficient
+  icon: laptop-code
   icon_pack: fas
-  name: Photography
+  name: Machine<br>Learning
+- description: Advanced
+  icon: square-root-alt
+  icon_pack: fas
+  name: Numerical<br>Analysis
+- description: Intermediate
+  icon: search
+  icon_pack: fas
+  name: Information<br>Retrieval
 
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
