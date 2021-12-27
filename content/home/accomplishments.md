@@ -10,7 +10,7 @@ headless: true
 weight: 50
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Accomplish&shy;ments'
+title: 'Awards'
 subtitle:
 
 # Date format
@@ -23,30 +23,30 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- certificate_url: https://devpost.com/software/group-8
   date_end: ""
-  date_start: "2021-01-25"
-  description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
-  url: ""
-- certificate_url: https://www.edx.org
+  date_start: "2021-08-07"
+  description: "1st place, ￥10,000 awarded"
+  organization: USC CSSA & CSSA UCLA & CMU CSSA
+  organization_url: 
+  title: Unihack' 21 Hackathon
+  url: "https://devpost.com/software/group-8"
+- certificate_url: 
   date_end: ""
-  date_start: "2021-01-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2020-12-21"
-  date_start: "2020-07-01"
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R'
-  url: ""
+  date_start: "2020-04-01"
+  description: "2nd place, $1,000 awarded"
+  organization: UMass Department of Mathematics and Statistics
+  organization_url: https://www.math.umass.edu/
+  title: The 35th Annual Jacob-Cohen-Killam Mathematics Competition
+  url: "https://www.math.umass.edu/undergraduate/math-competition"
+- certificate_url: 
+  date_end: ""
+  date_start: "2019-04-01"
+  description: "2nd place, $1,000 awarded"
+  organization: UMass Department of Mathematics and Statistics
+  organization_url: https://www.math.umass.edu/
+  title: The 34th Annual Jacob-Cohen-Killam Mathematics Competition
+  url: "https://www.math.umass.edu/undergraduate/math-competition"
 
 design:
   columns: '2' 
