@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Gary # Website name
-baseurl: 'https://acad.garywei.dev/' # Website URL
+baseurl: 'https://garywei944.github.io/acad.garywei.dev/' # Website URL
 copyright: '© {year} garywei944' # Footer text, e.g. '© {year} Me'
 
 ############################
