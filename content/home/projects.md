@@ -7,10 +7,10 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 65
+weight: 70
 
 title: Projects
-subtitle: 'Academic Projects<br>- www.garywei.dev for the others'
+subtitle: 'Academic Projects<br>- [www.garywei.dev](https://www.garywei.dev/#portfolio-section) for the others'
 
 content:
   # Page type to display. E.g. project.
@@ -47,7 +47,7 @@ design:
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 2
+  view: 3
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false

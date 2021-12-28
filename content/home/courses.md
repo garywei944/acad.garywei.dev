@@ -5,7 +5,7 @@ headless: true
 # ... Put Your Section Options Here (title etc.) ...
 title: Coursework
 subtitle: UMass Amherst - GPA 3.94/4.0
-weight: 21  # section position on page
+weight: 60  # section position on page
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
@@ -48,6 +48,7 @@ design:
 - Compiler Techniques
 - Independent Study (with [Prof. Hong Yu](https://www.uml.edu/sciences/computer-science/faculty/yu-hong.aspx))
 - Intensive Intermediate Japanese II
+- Nutrition/Healthy Lifestyle
 - Statistics II
   </div>
 </div>

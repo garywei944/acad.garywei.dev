@@ -7,24 +7,24 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Courses
-    url: '#courses'
-    weight: 20
   - name: Skills
     url: '#skills'
-    weight: 21
+    weight: 20
   - name: Experience
     url: '#experience'
-    weight: 22
+    weight: 30
   - name: Awards
     url: '#awards'
-    weight: 23
+    weight: 40
+  - name: Courses
+    url: '#courses'
+    weight: 50
 #  - name: Posts
 #    url: '#posts'
 #    weight: 20
   - name: Projects
     url: '#projects'
-    weight: 30
+    weight: 60
 #  - name: Talks
 #    url: '#talks'
 #    weight: 40
@@ -33,7 +33,7 @@ main:
 #    weight: 50
   - name: Contact
     url: '#contact'
-    weight: 60
+    weight: 70
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
