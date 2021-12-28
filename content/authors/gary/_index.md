@@ -80,4 +80,4 @@ He works as a research assistant at UMass BioNLP Lab, which conducts research on
 He also studies in Mathematics and Japanese Language in Undergraduate.
 His primary concentrations are Computational Mathematics and Applied Mathematics, which include numerical solution and analysis to solve linear system, approximation problem, ODE, etc.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.us-east-1.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao+Wei+Resume+Privacy.pdf" "newtab" >}}resumé{{< /staticref >}}.
