@@ -30,7 +30,7 @@ item:
   organization: USC CSSA & CSSA UCLA & CMU CSSA
   organization_url: 
   title: Unihack' 21 Hackathon
-  url: "https://devpost.com/software/group-8"
+  url: "https://unihack21.devpost.com/"
 - certificate_url: 
   date_end: ""
   date_start: "2020-04-01"

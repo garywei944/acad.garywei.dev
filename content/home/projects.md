@@ -10,7 +10,7 @@ headless: true
 weight: 65
 
 title: Projects
-subtitle: ''
+subtitle: 'Research Projects<br>www.garywei.dev for the others'
 
 content:
   # Page type to display. E.g. project.
@@ -27,8 +27,14 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
+  - name: Machine Learning
+    tag: Machine Learning
+  - name: 3D CV
+    tag: 3D Computer Vision
+  - name: NLP
+    tag: NLP
+  - name: Drug Discovery
+    tag: Drug Discovery
   - name: Other
     tag: Demo
 
