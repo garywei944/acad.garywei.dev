@@ -10,14 +10,14 @@ headless: true
 weight: 65
 
 title: Projects
-subtitle: 'Research Projects<br>www.garywei.dev for the others'
+subtitle: 'Academic Projects<br>- www.garywei.dev for the others'
 
 content:
   # Page type to display. E.g. project.
   page_type: project
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-  filter_default: 0
+  filter_default: 1
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`filter_button` instances) as you like.
@@ -32,7 +32,7 @@ content:
   - name: 3D CV
     tag: 3D Computer Vision
   - name: NLP
-    tag: NLP
+    tag: Natural Language Processing
   - name: Drug Discovery
     tag: Drug Discovery
   - name: Other

@@ -5,7 +5,7 @@
 
 title: Gary # Website name
 baseurl: 'https://acad.garywei.dev/' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+copyright: '© {year} garywei944' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
