@@ -4,6 +4,7 @@ summary: MCM/ICM 2021 Problem C<br>Evaluate the accuracy of the Asian Giant Horn
 tags:
 - Math Modeling
 - Machine Learning
+- Other
 date: "2021-02-14T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

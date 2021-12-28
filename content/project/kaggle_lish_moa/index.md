@@ -2,7 +2,8 @@
 title: Mechanisms of Action (MoA) Prediction
 summary: Machine Learning solutions to classify drugs based on their biological activity
 tags:
-- Deep Learning
+- Machine Learning
+- Drug Discovery
 date: "2021-01-15T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

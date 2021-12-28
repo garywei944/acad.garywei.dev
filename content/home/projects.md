@@ -36,7 +36,7 @@ content:
   - name: Drug Discovery
     tag: Drug Discovery
   - name: Other
-    tag: Demo
+    tag: Other
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
