@@ -32,9 +32,22 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/deploy' }}
+      - name: Sync to s3
+        uses: jakejarvis/s3-sync-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-east-1'
+          SOURCE_DIR: 'public'
+
+      - name: Invalidate cloudfront
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          PATHS: '/*'
+          AWS_REGION: 'us-east-1'
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
