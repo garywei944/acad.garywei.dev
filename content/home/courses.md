@@ -44,11 +44,12 @@ design:
 - Linear Algebra for Applied Mathematics
 - Mathematical Modeling
 
-### Courses in Spring 2021
+### Courses in Spring 2022
 - Compiler Techniques
 - Independent Study (with [Prof. Hong Yu](https://www.uml.edu/sciences/computer-science/faculty/yu-hong.aspx))
 - Intensive Intermediate Japanese II
 - Nutrition/Healthy Lifestyle
+- Reverse Engineering and Vulnerability Analysis
 - Statistics II
   </div>
 </div>
