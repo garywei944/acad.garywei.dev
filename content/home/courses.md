@@ -45,8 +45,9 @@ design:
 - Mathematical Modeling
 
 ### Courses in Spring 2022
-- Compiler Techniques
+- Compiler Techniques (Grad Level)
 - Independent Study (with [Prof. Hong Yu](https://www.uml.edu/sciences/computer-science/faculty/yu-hong.aspx))
+  - Grammatical Error Correction for EHR Notes
 - Intensive Intermediate Japanese II
 - Nutrition/Healthy Lifestyle
 - Reverse Engineering and Vulnerability Analysis
