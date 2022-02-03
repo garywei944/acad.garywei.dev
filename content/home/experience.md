@@ -36,6 +36,7 @@ experience:
         * Data Processing
         * Model Implementation
         * Performance Analysis
+        * Application Product Implementation
 
 design:
   columns: '2'
