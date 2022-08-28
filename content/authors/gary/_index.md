@@ -6,12 +6,12 @@ title: Guanghao Wei
 superuser: true
 
 # Role/position/tagline
-role: Dual B.S. in Computer Science and Mathematics
+role: Master of Engineering in Computer Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: University of Massachusetts Amherst
-  url: https://www.umass.edu/
+- name: Cornell University
+  url: https://www.cornell.edu/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Machine Learning in Biomedical NLP, 3D Computer Vision, and high performance reproducible Machine Learning projects.
@@ -24,10 +24,14 @@ interests:
 - 3D Computer Vision
 - Full Stack Development
 - Game Programming
+- Cybersecurity
 
 # Education to show in About widget
 education:
   courses:
+  - course: M.Eng. in Computer Science
+    institution: Cornell University
+    year: 2023
   - course: B.S. in Computer Science
     institution: University of Massachusetts Amherst
     year: 2022
@@ -37,6 +41,9 @@ education:
   - course: Minor in Japanese
     institution: University of Massachusetts Amherst
     year: 2022
+  - course: High School Diploma
+    institution: Beijing No.4 High School
+    year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -73,11 +80,14 @@ email: ""
 highlight_name: true
 ---
 
-Guanghao Wei is a dual B.S. in Computer Science and Mathematics at University of Massachusetts Amherst.
-His research interests include machine learning in biomedical NLP, 3D computer vision, and high performance reproducible machine learning projects.
-He works as a research assistant at UMass BioNLP Lab, which conducts research on information retrieval, machine learning, and natural language processing, with a focus on biomedical applications.
+Guanghao Wei is a Master of Engineering in Computer Science at Cornell University.
+He received dual B.S. degrees in Computer Science and Mathematics at University of Massachusetts Amherst with minoring
+Japanese.
+His research interests include machine learning in biomedical NLP, 3D computer vision, and high performance reproducible
+machine learning projects.
+He worked as a research assistant at UMass BioNLP Lab, which conducts research on information retrieval, machine learning, and natural language processing, with a focus on biomedical applications.
 
 He also studies in Mathematics and Japanese Language in Undergraduate.
 His primary concentrations are Computational Mathematics and Applied Mathematics, which include numerical solution and analysis to solve linear system, approximation problem, ODE, etc.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao+Wei+Resume+Privacy.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume%20Privacy.pdf" "newtab" >}}resumé{{< /staticref >}}.

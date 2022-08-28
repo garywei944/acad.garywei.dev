@@ -37,6 +37,4 @@ This project is an attempt to publish a dataset comprised of human-annotated lay
 ***Keywords***: Electronic Health Records, Consumer Health, Information Retrieval, Natural Language Processing
 
 # Future Plan
-I'm actively conducting the research in UMass BioNLP Lab with Ph.D. student [Zonghai Yao](https://www.linkedin.com/in/zonghaiyao/) directed by Prof. Hong Yu of UMass Lowell.
-
-We have finished primary pipeline implementation and had some results. We are looking forward to publishing it in Jan or Feb 2022.
+The research is taken over by another Ph.D. in UMass BioNLP Lab directed by Prof. Hong Yu of UMass Lowell.

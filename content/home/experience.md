@@ -28,7 +28,7 @@ experience:
     company_logo: umass
     location: Massachusetts
     date_start: '2021-05-01'
-    date_end: ''
+    date_end: '2022-06-01'
     description: |2-
         Responsibilities include:
         
@@ -37,6 +37,13 @@ experience:
         * Model Implementation
         * Performance Analysis
         * Application Product Implementation
+
+        Reserch & Projects:
+        
+        * NoteAid Epic App (Full Stack Web App)
+        * NoteAid Annotations (Research)
+        * NoteAid Annotations Lay Definition Generation (Research)
+        * Grammatical Error Correction for EHR Notes (Research)
 
 design:
   columns: '2'
