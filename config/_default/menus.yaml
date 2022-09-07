@@ -38,5 +38,5 @@ main:
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
   - name: Resume
-    url: https://s3.amazonaws.com/garywei.dev/Guanghao+Wei+Resume+Privacy.pdf
+    url: https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf
     weight: 70
