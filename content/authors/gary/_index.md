@@ -81,13 +81,13 @@ highlight_name: true
 ---
 
 Guanghao Wei is a Master of Engineering in Computer Science at Cornell University.
-He received dual B.S. degrees in Computer Science and Mathematics at University of Massachusetts Amherst with minoring
-Japanese.
-His research interests include machine learning in biomedical NLP, 3D computer vision, and high performance reproducible
-machine learning projects.
-He worked as a research assistant at UMass BioNLP Lab, which conducts research on information retrieval, machine learning, and natural language processing, with a focus on biomedical applications.
+He received dual B.S. degrees in Computer Science and Mathematics at University of Massachusetts Amherst with a Japanese minor.
+His research interests include distributed and parallel machine learning, machine learning in bio-medical NLP, and high-performance computing in machine learning. 
+He worked as a research assistant at [UMass BioNLP Lab](https://bio-nlp.org/) with [Prof. Hong Yu](https://www.cics.umass.edu/faculty/directory/hong_yu), conducting research on information retrieval, machine learning, and natural language processing, with a focus on biomedical applications.
 
 He also studies in Mathematics and Japanese Language in Undergraduate.
-His primary concentrations are Computational Mathematics and Applied Mathematics, which include numerical solution and analysis to solve linear system, approximation problem, ODE, etc.
+His primary concentrations are Scientific Computing and Applied Mathematics, which include numerical solution and analysis of linear system, approximation problem, and ODE, etc.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume%20Privacy.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+
+_**Check out [garywei.dev](https://www.garywei.dev/) for my personal website!**_
