@@ -1,5 +1,5 @@
 ---
-title: NoteAid Epic App (in progress)
+title: NoteAid Epic App (left as graduated)
 summary: NoteAid is a patient-oriented web application that helps patients read their doctor notes.
 tags:
 - Machine Learning
@@ -30,15 +30,15 @@ url_video: ""
 slides: ""
 ---
 # Description
-NoteAid is a patient-oriented web application that patients can read their doctor notes, which are stored on the EPIC 
-system, with the help of NLP Machine Learning models on any mainstream device.
+NoteAid is a patient-oriented web application that patients can read their doctor notes, which are stored on the EPIC system, with the help of NLP Machine Learning models on any mainstream device.
 
 NoteAid classifies jargon terms in the EHR and annotates the simplified definitions.
 
 ***Keywords***: EPIC System, Electronic Health Records, Consumer Health, Natural Language Processing
 
-# Future Plan
-This project is taken over by my team in UMass BioNLP Lab led by Ph.D. student 
-[Zonghai Yao](https://www.linkedin.com/in/zonghaiyao/) and directed by Prof. Hong Yu of UMass Lowell.
+# Claim
+My work is conducted by the time I was working in UMass BioNLP Lab.
+Now I have left as I graduated from UMass Amherst.
+However, the research is still actively work in progress led by [Zonghai Yao](https://scholar.google.com/citations?user=oVYZ904AAAAJ&hl=en).
 
 This project is funded by NIH/NLM and currently under development.

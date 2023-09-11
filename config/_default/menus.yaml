@@ -7,36 +7,27 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Skills
-    url: '#skills'
-    weight: 20
   - name: Experience
     url: '#experience'
-    weight: 30
-  - name: Awards
-    url: '#awards'
-    weight: 40
-  - name: Courses
-    url: '#courses'
-    weight: 50
-#  - name: Posts
-#    url: '#posts'
-#    weight: 20
+    weight: 15
+  # - name: Posts
+  #   url: '#posts'
+  #   weight: 20
   - name: Projects
     url: '#projects'
-    weight: 60
-#  - name: Talks
-#    url: '#talks'
-#    weight: 40
-#  - name: Publications
-#    url: '#featured'
-#    weight: 50
+    weight: 30
+  # - name: Talks
+  #   url: '#talks'
+  #   weight: 40
+  - name: Publications
+    url: '#featured'
+    weight: 50
   - name: Contact
     url: '#contact'
-    weight: 70
+    weight: 60
 
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-  - name: Resume
+  # Link to a PDF of your resume/CV from the menu.
+  # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+  - name: CV
     url: https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf
     weight: 70
