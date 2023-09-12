@@ -8,7 +8,7 @@
 appearance:
   theme_day: minimal
   theme_night: minimal
-  font: minimal
+  font: native
   font_size: L
 
 # SEO
@@ -17,7 +17,7 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
+    org_name: 'Cornell University'
     description: 'Gary Wei: Machine Learning Ph.D. Applicant'
     twitter: 'GaryWeiML'
   analytics:
@@ -68,7 +68,7 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: true
+    enable: false
   repository:
     url: 'https://github.com/garywei944/acad.garywei.dev'
     content_dir: content

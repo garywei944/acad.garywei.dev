@@ -1,6 +1,6 @@
 ---
-title: NoteAid Epic App (left as graduated)
-summary: NoteAid is a patient-oriented web application that helps patients read their doctor notes.
+title: NoteAid Epic App
+summary: NoteAid Epic is a patient-oriented web application that helps patients read their doctor notes.
 tags:
 - Machine Learning
 - Natural Language Processing

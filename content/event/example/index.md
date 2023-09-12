@@ -1,5 +1,6 @@
 ---
 title: Example Talk
+draft: true
 
 event: Wowchemy Conference
 event_url: https://example.org

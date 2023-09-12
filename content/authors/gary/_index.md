@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: M.Eng. in Computer Science
+role: M.Eng. in Computer Science, Ph.D. Applicant
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -22,11 +22,11 @@ organizations:
     url: https://www.cornell.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include machine learning system, machine learning theory, and AI for science.
+bio: My research interests include machine learning systems, machine learning theory, and AI for science.
 
 # Interests to show in About widget
 interests:
-  - Machine Learning System
+  - Machine Learning Systems
   - Machine Learning Theory
   - AI for Science - Biology/Chemistry/etc
   - High Performance Computing
