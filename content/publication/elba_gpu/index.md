@@ -4,7 +4,7 @@ authors:
 - Minhao Li
 - Siyu Wang
 - gary
-date: "2023-05-15T00:00:00Z"
+date: "2023-09-13T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -30,12 +30,12 @@ abstract: |2-
   For the best performance implementation, the one-to-one scheduler achieves ~7-8x speed-up using 25 MPI processes compared with the baseline vanilla ELBA GPU scheduler.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary:
 
 tags:
 - High Performance Computing
 - Bioinformatics
-featured: false
+featured: true
 
 links:
 # - name: Custom Link
@@ -50,7 +50,7 @@ url_source: ''
 url_video: ''
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
   caption:
   focal_point: ""
