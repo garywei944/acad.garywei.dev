@@ -40,7 +40,7 @@ featured: true
 links:
 # - name: Custom Link
 #   url: http://example.org
-url_pdf: https://s3.amazonaws.com/garywei.dev/GPU+Scheduler+for+De+Novo+Genome+Assembly+with+Multiple+MPI+Processes.pdf
+url_pdf: 'https://arxiv.org/abs/2309.07270'
 url_code: 'https://github.com/garywei944/ELBA/tree/GPU'
 url_dataset: ''
 url_poster: 'https://github.com/garywei944/ELBA/blob/GPU/ELBA%20GPU%20poster.pdf'
