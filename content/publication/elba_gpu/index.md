@@ -38,12 +38,12 @@ tags:
 featured: true
 
 links:
-# - name: Custom Link
-#   url: http://example.org
-url_pdf: 'https://arxiv.org/abs/2309.07270'
+- name: arXiv
+  url: https://arxiv.org/abs/2309.07270
+url_pdf: 'https://arxiv.org/pdf/2309.07270'
 url_code: 'https://github.com/garywei944/ELBA/tree/GPU'
 url_dataset: ''
-url_poster: 'https://github.com/garywei944/ELBA/blob/GPU/ELBA%20GPU%20poster.pdf'
+url_poster: 'https://s3.amazonaws.com/garywei.dev/public/posters/ELBA+GPU+poster.pdf'
 url_project: ''
 url_slides: ''
 url_source: ''
@@ -51,7 +51,7 @@ url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
+image:s
   caption:
   focal_point: ""
   preview_only: false

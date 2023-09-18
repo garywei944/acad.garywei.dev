@@ -17,7 +17,7 @@ image:
 
 links:
 url_code: "https://github.com/garywei944/ELBA/tree/GPU"
-url_pdf: "https://arxiv.org/abs/2309.07270"
+url_pdf: "https://arxiv.org/pdf/2309.07270"
 url_slides: ""
 url_video: ""
 
