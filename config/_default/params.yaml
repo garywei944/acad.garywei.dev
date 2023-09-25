@@ -68,7 +68,7 @@ features:
   math:
     enable: false
   privacy_pack:
-    enable: false
+    enable: true
   repository:
     url: 'https://github.com/garywei944/acad.garywei.dev'
     content_dir: content
