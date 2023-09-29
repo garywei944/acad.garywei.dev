@@ -27,7 +27,7 @@ bio: My research interests include machine learning systems, machine learning th
 # Interests to show in About widget
 interests:
   - Machine Learning Systems
-  - Machine Learning Theory
+  - Optimization Theory
   - AI for Science - Biology/Chemistry/etc
   - High Performance Computing
 
