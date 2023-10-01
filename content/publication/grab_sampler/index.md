@@ -1,15 +1,10 @@
 ---
 title: GPU Scheduler for De Novo Genome Assembly with Multiple MPI Processes
 authors:
-- Minhao Li
-- Siyu Wang
 - gary
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-- "Equal contribution"
 date: "2023-09-13T00:00:00Z"
 doi: ""
+draft: true
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
