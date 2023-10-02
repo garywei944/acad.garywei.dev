@@ -1,10 +1,9 @@
 ---
-title: GPU Scheduler for De Novo Genome Assembly with Multiple MPI Processes
+title: "GraB-sampler: Optimal Permutation-based SGD Data Sampler for PyTorch"
 authors:
 - gary
-date: "2023-09-13T00:00:00Z"
+date: "2023-09-28T00:00:00Z"
 doi: ""
-draft: true
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2017-01-01T00:00:00Z"
@@ -13,20 +12,18 @@ publishDate: "2017-01-01T00:00:00Z"
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["4"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: ""
 
 abstract: |2-
-  *De Novo* Genome assembly is one of the most important tasks in computational biology.
-  ELBA is the state-of-the-art distributed-memory parallel algorithm for overlap detection and layout simplification steps of *De Novo* genome assembly but exists a performance bottleneck in pairwise alignment.
+  The online Gradient Balancing (GraB) algorithm greedily choosing the examples ordering by solving the herding problem using per-sample gradients is proved to be the theoretically optimal solution that guarantees to outperform Random Reshuffling.
+  However, there is currently no efficient implementation of GraB for the community to easily use it.
 
-  In this work, we introduce 3 GPU schedulers for ELBA to accommodate multiple MPI processes and multiple GPUs.
-  The GPU schedulers enable multiple MPI processes to perform computation on GPUs in a round-robin fashion.
-  Both strong and weak scaling experiments show that 3 schedulers are able to significantly improve the performance of baseline while there is a trade-off between parallelism and GPU scheduler overhead.
-  For the best performance implementation, the one-to-one scheduler achieves ~7-8x speed-up using 25 MPI processes compared with the baseline vanilla ELBA GPU scheduler.
+  This work presents an efficient Python library, *GraB-sampler*, that allows the community to easily use GraB algorithms and proposes 5 variants of the GraB algorithm.
+  The best performance result of the GraB-sampler reproduces the training loss and test accuracy results while only in the cost of 8.7% training time overhead and 0.85% peak GPU memory usage overhead.
 
 # Summary. An optional shortened abstract.
 summary:
@@ -38,12 +35,12 @@ featured: true
 
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/2309.07270
-url_pdf: 'https://arxiv.org/pdf/2309.07270'
-url_code: 'https://github.com/garywei944/ELBA/tree/GPU'
+  url: https://arxiv.org/abs/2309.16809
+url_pdf: https://arxiv.org/pdf/2309.16809
+url_code: 'https://github.com/garywei944/grab-sampler'
 url_dataset: ''
-url_poster: 'https://s3.amazonaws.com/garywei.dev/public/posters/ELBA+GPU+poster.pdf'
-url_project: ''
+url_poster: ''
+url_project: 'https://pypi.org/project/grab-sampler/'
 url_slides: ''
 url_source: ''
 url_video: ''
@@ -60,8 +57,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-- elba_gpu
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

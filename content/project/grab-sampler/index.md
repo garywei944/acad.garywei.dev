@@ -16,7 +16,7 @@ image:
 
 links:
 url_code: "https://github.com/garywei944/grab-sampler"
-url_pdf: "https://s3.amazonaws.com/garywei.dev/GraB_Library_CS_MEng_Project_Report.pdf"
+url_pdf: "https://arxiv.org/pdf/2309.16809"
 url_slides: ""
 url_video: ""
 
