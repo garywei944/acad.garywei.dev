@@ -22,13 +22,13 @@ organizations:
     url: https://www.cornell.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include machine learning systems, machine learning theory, and AI for science.
+bio: My research interests include machine learning systems, AI for science, Optimization theory, and High Performance Computing.
 
 # Interests to show in About widget
 interests:
   - Machine Learning Systems
+  - AI for Science
   - Optimization Theory
-  - AI for Science - Biology/Chemistry/etc
   - High Performance Computing
 
 # Education to show in About widget
@@ -61,15 +61,21 @@ social:
     label: Follow me on Twitter
     display:
       header: true
+  - icon: google-scholar # Alternatively, use `google-scholar` icon from `ai` icon pack
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=WSe_T1EAAAAJ&hl=en\
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-    link: https://scholar.google.com/citations?user=WSe_T1EAAAAJ&hl=en\
+    link: https://www.semanticscholar.org/author/Guanghao-Wei/2249534497
   - icon: github
     icon_pack: fab
     link: https://github.com/garywei944
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/garywei944/
+  - icon: orcid
+    icon_pack: fab
+    link: https://orcid.org/0000-0003-1016-2372
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
@@ -83,8 +89,8 @@ email: 'garywei944@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-My research interests lie at the intersection of machine learning systems, theory, and AI-driven scientific advancements, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
-I work at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) with [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
+My research interests lie at the intersection of machine learning systems, optimization theory, high performance computing, and AI-driven scientific advancements, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
+I work at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) advised by [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
 Our work, grounded in mathematical principles, aims to expedite large-scale, high-performance machine learning systems that are efficient, parallel, and distributed in real-world settings.
 Parallel to this, I collaborate on AI-driven molecule generation with talented Ph.D. students.
 

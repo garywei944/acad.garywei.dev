@@ -1,6 +1,7 @@
 ---
 title: NoteAid Lay Definition Generation
-summary: NoteAid is a BioNLP system that automatically recognizes medical concepts and translates medical jargon into patient-oriented lay language.
+summary: |2
+  **[NAACL 24]** NoteAid is a BioNLP system that automatically recognizes medical concepts and translates medical jargon into patient-oriented lay language.
 tags:
 - Machine Learning
 - Natural Language Processing

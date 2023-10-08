@@ -87,10 +87,11 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Featured Publications
+      title: Featured Papers
       filters:
         folders:
           - publication
+          - manuscript
         featured_only: true
     design:
       columns: '2'
@@ -109,10 +110,56 @@ sections:
     design:
       columns: '2'
       view: citation
+  - block: collection
+    content:
+      title: Manuscripts
+      subtitle: Preprints. Under review.
+      text:
+      filters:
+        folders:
+          - manuscript
+        exclude_featured: false
+    design:
+      columns: '2'
+      view: citation
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: Ongoing Projects
+      filters:
+        folders:
+          - wip_project
+      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+      default_button_index: 0
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the toolbar, delete the entire `filter_button` block.
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Machine Learning
+          tag: Machine Learning
+        - name: AI4Science
+          tag: AI for Science
+        - name: HPC
+          tag: High Performance Computing
+        - name: Optimization
+          tag: Optimization Theory
+        - name: NLP
+          tag: Natural Language Processing
+        - name: Other
+          tag: Other
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      view: compact
+      # For Showcase view, flip alternate rows?
+      flip_alt_rows: true
+  - block: portfolio
+    content:
+      title: Archived Projects
       filters:
         folders:
           - project
@@ -134,7 +181,7 @@ sections:
           tag: High Performance Computing
         - name: NLP
           tag: Natural Language Processing
-        - name: 3D CV
+        - name: 3D&CV
           tag: 3D Computer Vision
         - name: Other
           tag: Other
@@ -227,6 +274,14 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - certificate_url: https://ctftime.org/team/46873
+          date_end: ""
+          date_start: "2022-04-03"
+          description: "4th place on UMass Leaderboard, 37th place on the global leaderboard"
+          organization: UMass Cybersecurity Club
+          organization_url:
+          title: UMass CTF 2022
+          url: "https://ctftime.org/event/1561"
         - certificate_url: https://devpost.com/software/group-8
           date_end: ""
           date_start: "2021-08-07"
