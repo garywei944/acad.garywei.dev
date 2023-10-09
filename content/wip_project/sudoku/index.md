@@ -4,7 +4,7 @@ summary: Generate novel molecules with desired properties using deep generative 
 tags:
 - AI for Science
 - Machine Learning
-date: "2023-09-01T00:00:00Z"
+date: "2023-10-02T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

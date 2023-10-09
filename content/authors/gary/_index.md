@@ -81,7 +81,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf
+    link: https://s3.amazonaws.com/garywei.dev/Guanghao_Wei_PhD_CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'garywei944@gmail.com'
@@ -99,6 +99,6 @@ Prior to this, I pursued dual B.S. degrees in Computer Science and Mathematics a
 My specialization in Mathematics focused on Applied Math and Scientific Computing.
 Prior to my graduation, I engaged in research at the [UMass BioNLP Lab](https://bio-nlp.org/) under [Prof. Hong Yu](https://www.cics.umass.edu/faculty/directory/hong_yu), concentrating on bio-medical and clinical NLP applications within Electronic Health Records.
 
-{{< icon name="download" pack="fas" >}} Download recent {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao%20Wei%20Resume.pdf" "newtab" >}}CV{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download recent {{< staticref "https://s3.amazonaws.com/garywei.dev/Guanghao_Wei_PhD_CV.pdf" "newtab" >}}CV{{< /staticref >}}.
 
 _**Check out [garywei.dev](https://www.garywei.dev/) for my non-academic personal website!**_

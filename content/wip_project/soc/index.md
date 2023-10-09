@@ -7,7 +7,7 @@ tags:
 - Machine Learning
 - Generative AI
 - Drug Discovery
-date: "2023-09-01T00:00:00Z"
+date: "2023-06-17T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
