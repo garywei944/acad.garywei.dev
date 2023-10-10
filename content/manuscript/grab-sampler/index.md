@@ -19,18 +19,19 @@ publication: ""
 publication_short: ""
 
 abstract: |2-
-  The online Gradient Balancing (GraB) algorithm greedily choosing the examples ordering by solving the herding problem using per-sample gradients is proved to be the theoretically optimal solution that guarantees to outperform Random Reshuffling.
-  However, there is currently no efficient implementation of GraB for the community to easily use it.
+  The online Gradient Balancing (GraB) algorithm, which determines example orderings through the herding problem with per-sample gradients, has been proved as a theoretically optimal solution, consistently outperforming Random Reshuffling.
+  Yet, a user-friendly and efficient implementation is absent in the community.
 
-  This work presents an efficient Python library, *GraB-sampler*, that allows the community to easily use GraB algorithms and proposes 5 variants of the GraB algorithm.
-  The best performance result of the GraB-sampler reproduces the training loss and test accuracy results while only in the cost of 8.7% training time overhead and 0.85% peak GPU memory usage overhead.
+  This work presents *GraB-sampler*, an efficient and easy-to-use Python library designed for seamless integration of the GraB algorithm, additionally proposing three novel variants.
+  The best performance result of the *GraB-sampler* reproduces the training loss and test accuracy results with only the cost of 8.7% training time overhead and 0.85% peak GPU memory usage overhead.
 
 # Summary. An optional shortened abstract.
 summary:
 
 tags:
-- High Performance Computing
-- Bioinformatics
+- Machine Learning
+- Machine Learning Systems
+- Cornell Relax ML Lab
 featured: true
 
 links:

@@ -274,6 +274,14 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - certificate_url:
+          date_end: ""
+          date_start: "2022-05-15"
+          description: "Bay State Fellowship Recipient at UMass Amherst (Declined)"
+          organization: UMass Amherst
+          organization_url: https://www.umass.edu/
+          title: Bay State Fellowship
+          url: "https://www.cics.umass.edu/content/bay-state-scholarship-program"
         - certificate_url: https://ctftime.org/team/46873
           date_end: ""
           date_start: "2022-04-03"
@@ -314,6 +322,14 @@ sections:
           organization_url: https://www.umass.edu/mathematics-statistics/
           title: UMass Amherst Dean's List Honors
           url: "https://www.umass.edu/registrar/students/deans-list"
+        - certificate_url:
+          date_end: "2022-05-31"
+          date_start: "2018-09-01"
+          description: "Chancellor’s Award at UMass Amherst, $40,000 Scholarship"
+          organization: UMass Amherst
+          organization_url: https://www.umass.edu/
+          title: Chancellor’s Award
+          url: "https://www.umass.edu/financialaid/undergraduate/undergraduate-scholarships/umass-admissions-scholarships-and-awards"
     design:
       columns: '2'
   # - block: markdown
