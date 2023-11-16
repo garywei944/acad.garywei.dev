@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: M.Eng. in Computer Science, Ph.D. Applicant
+role: M.Eng. in Computer Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -89,9 +89,9 @@ email: 'garywei944@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-My research interests lie at the intersection of machine learning systems, optimization theory, high performance computing, and AI-driven scientific advancements, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
+My research interests lie at the intersection of Machine Learning Systems, Optimization Theory, High Performance Computing, and AI for Science, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
 I work at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) advised by [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
-Our work, grounded in mathematical principles, aims to expedite large-scale, high-performance machine learning systems that are efficient, parallel, and distributed in real-world settings.
+Grounded in mathematical principles, our work aims to expedite large-scale, high-performance machine learning systems that are efficient, parallel, and distributed in real-world settings.
 Parallel to this, I collaborate on AI-driven molecule generation with talented Ph.D. students.
 
 My academic journey has led me to a Master of Engineering in Computer Science at Cornell University.
