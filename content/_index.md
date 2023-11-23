@@ -139,8 +139,8 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Machine Learning
-          tag: Machine Learning
+        - name: ML Systems
+          tag: Machine Learning Systems
         - name: AI4Science
           tag: AI for Science
         - name: HPC
@@ -175,6 +175,8 @@ sections:
           tag: '*'
         - name: Machine Learning
           tag: Machine Learning
+        - name: ML Systems
+          tag: Machine Learning Systems
         - name: AI4Science
           tag: AI for Science
         - name: HPC

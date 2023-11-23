@@ -1,13 +1,12 @@
 ---
-title: GraB Convergence Analysis under Adam Optimizer
+title: Efficient Automatic Differentiation Embedded GraB-System
 summary: |2
-  Prove the convergence of GraB under Adam optimizer, best if we can show it's optimal.
+  **[ICML 24]** A novel framework for calculating GraB updates in a layer-wise fashion, integrating seamlessly into the PyTorch Automatic Differentiation (AD) engine that makes it possible to employ optimal convergence rates in the pre-training of Large Language Models (LLMs).
 tags:
 - Machine Learning
 - Machine Learning Systems
 - Cornell Relax ML Lab
-- Optimization Theory
-date: "2023-09-16T00:00:00Z"
+date: "2023-11-22T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
