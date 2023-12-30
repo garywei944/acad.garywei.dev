@@ -1,7 +1,7 @@
 ---
 title: Efficient Automatic Differentiation Embedded GraB-System
 summary: |2
-  **[ICML 24]** A novel framework for calculating GraB updates in a layer-wise fashion, integrating seamlessly into the PyTorch Automatic Differentiation (AD) engine that makes it possible to employ optimal convergence rates in the pre-training of Large Language Models (LLMs).
+  A novel framework for calculating GraB updates in a layer-wise fashion, integrating seamlessly into the PyTorch Automatic Differentiation (AD) engine that makes it possible to employ optimal convergence rates in the pre-training of Large Language Models (LLMs).
 tags:
 - Machine Learning
 - Machine Learning Systems

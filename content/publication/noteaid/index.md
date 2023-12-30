@@ -8,11 +8,9 @@ authors:
 - Zhangqi Duan
 - Sunjae Kwon
 - Zhichao Yang
+- README Annotation Team
 - Hong Yu
-author_notes:
-- "Equal contribution"
-- "Equal contribution"
-date: "2023-12-15T00:00:00Z"
+date: "2023-12-24T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -25,19 +23,12 @@ publishDate: "2017-01-01T00:00:00Z"
 publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: "2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics"
-publication_short: "NAACL 2024"
+publication: "Under Review"
+publication_short: 
 
 abstract: |2-
-  The growing patient access to Electronic Health Records (EHRs) necessitates tools that aid in demystifying medical jargon.
-  This paper extends the work on NoteAid, an NLP system designed to improve patient understanding of EHR notes by linking clinical terms to lay language.
-  We address the critical gap left by the previous systems, which lack comprehensiveness in their lay definitions for medical jargon.
-  Our study introduces the README dataset, an expert-annotated collection of medical terms paired with lay definitions tailored for a 4th-7th grade reading level.
-  We detail the development of a novel data-centric pipeline that leverages a Human-AI-in-the-loop paradigm to refine the README dataset, which involved rounds of AI-assisted data cleaning, augmentation, and validation to ensure high quality.
+  The advancement in healthcare has shifted focus toward patient-centric approaches, particularly in self-care and patient education, facilitated by access to Electronic Health Records (EHR). However, medical jargon in EHRs poses significant challenges in patient comprehension. To address this, we introduce a new task of automatically generating lay definitions, aiming to simplify complex medical terms into patient-friendly lay language. We first created the README dataset, an extensive collection of over 20,000 unique medical terms and 300,000 mentions, each offering context-aware lay definitions manually annotated by domain experts. We have also engineered a data-centric Human-AI pipeline that synergizes data filtering, augmentation, and selection to improve data quality. We then used README as the training data for models and leveraged a Retrieval-Augmented Generation (RAG) method to reduce hallucinations and improve the quality of model outputs. Our extensive automatic and human evaluations demonstrate that open-source mobile-friendly models, when fine-tuned with high-quality data, are capable of matching or even surpassing the performance of state-of-the-art closed-source large language models like ChatGPT. This research represents a significant stride in closing the knowledge gap in patient education and advancing patient-centric healthcare solutions.
 
-  By comparing different versions of the README dataset, we show that AI-examined high-quality subsets lead to superior performance in NLP models.
-  Additionally, we explore AI-synthetic data augmentation strategies and their efficacy when expert-annotated data is limited.
-  Our findings have significant implications for the future of patient-centric EHR interfaces, demonstrating that a focus on data quality substantially enhances the utility of NLP tools in real-world healthcare communication.
 
 # Summary. An optional shortened abstract.
 summary:
@@ -50,8 +41,10 @@ tags:
 featured: false
 
 links:
-url_pdf:
-url_code:
+- name: arXiv
+  url: https://arxiv.org/abs/2312.15561
+url_pdf: 'https://arxiv.org/pdf/2312.15561.pdf'
+url_code: 'https://github.com/seasonyao/NoteAid-README'
 url_dataset: ''
 url_poster: ''
 url_project: ''

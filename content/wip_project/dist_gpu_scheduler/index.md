@@ -1,7 +1,7 @@
 ---
 title: GPU scheduling and heterogeneous computation in distributed memory
 summary: |2-
-  **[GrAPL 2024 Workshop]** A general framework for GPU scheduling and heterogeneous computation in distributed memory.
+  A general framework for GPU scheduling and heterogeneous computation in distributed memory.
 tags:
 - High Performance Computing
 - Bioinformatics

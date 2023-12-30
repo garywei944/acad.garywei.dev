@@ -1,7 +1,7 @@
 ---
 title: Molecule Generation by Optimal Transport
 summary: |2
-  **[ICML 24]** Generate novel molecules with desired properties using deep generative models from latent space and optimal transition-based sampling.
+  Generate novel molecules with desired properties using deep generative models from latent space and optimal transition-based sampling.
 tags:
 - AI for Science
 - Machine Learning
