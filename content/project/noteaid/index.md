@@ -37,6 +37,9 @@ This project is an attempt to publish a dataset comprised of human-annotated lay
 
 ***Keywords***: Electronic Health Records, Consumer Health, Information Retrieval, Natural Language Processing
 
+## Epic System
+NoteAid Epic is a patient-oriented web application that helps patients read their doctor notes.
+
 # Claim
 My work is conducted by the time I was working in UMass BioNLP Lab.
 Now I have left as I graduated from UMass Amherst.

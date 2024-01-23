@@ -5,6 +5,7 @@ tags:
 - Machine Learning
 - 3D Computer Vision
 date: "2021-05-11T00:00:00Z"
+draft: true
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://github.com/garywei944/KPConv-PyTorch-ShapeNet-Part"

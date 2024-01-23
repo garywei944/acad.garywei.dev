@@ -183,8 +183,6 @@ sections:
           tag: High Performance Computing
         - name: NLP
           tag: Natural Language Processing
-        - name: 3D&CV
-          tag: 3D Computer Vision
         - name: Other
           tag: Other
     design:
