@@ -3,7 +3,7 @@ layout: post
 title: Writeup for UMassCTF 2022 - crypto/hatmash
 date: 2022-04-06
 description: |2-
-  What do you mean "We think you spend too much time with matrices."? It's just a hash function, jeez...
+  What do you mean \"We think you spend too much time with matrices.\"? It's just a hash function, jeez...
 tags:
   - crypto
   - UMassCTF
@@ -28,7 +28,7 @@ toc:
 
 ## Explore and Analysis
 
-[`hatmash.py`](hatmash.py) is the only file released to the competitors. After
+[`hatmash.py`](https://github.com/UMassCybersecurity/UMassCTF-2022-challenges/blob/main/crypto/hatmash/hatmash.py) is the only file released to the competitors. After
 read through the functions and some verification, we can easily tell it's all
 about matrix operations defined
 on [logical matrices](https://en.wikipedia.org/wiki/Logical_matrix), or 0-1
