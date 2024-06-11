@@ -1,113 +1,73 @@
----
----
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@misc{wei2024navigating,
+  abbr              = {ICLR Workshop},
+  title             = {Navigating Chemical Space with Latent Flows},
+  author            = {Guanghao Wei* and Yining Huang* and Chenru Duan and Yue Song and Yuanqi Du},
+  year              = {2024},
+  journal           = {ICLR 2024 Workshop on AI4DifferentialEquations In Science},
+  archiveprefix     = {arXiv},
+  arxiv             = {2405.03987},
+  eprint            = {2405.03987},
+  doi               = {10.48550/arXiv.2405.03987},
+  pdf               = {https://arxiv.org/pdf/2405.03987},
+  code              = {https://github.com/garywei944/ChemFlow},
+  poster            = {https://s3.amazonaws.com/garywei.dev/public/projects/chemflow/ChemFlow_Poster.pdf},
+  supp              = {https://colab.research.google.com/drive/1QAy_QoEnDRaiLF6kJ6RyhuGx1qCJXYKm?usp=sharing},
+  google_scholar_id = {2osOgNQ5qMEC},
+  primaryclass      = {cs.LG},
+  bibtex_show       = {true},
+  altmetric         = {true},
+  abstract          = {Recent progress of deep generative models in the vision and language domain has stimulated significant interest in more structured data generation such as molecules. However, beyond generating new random molecules, efficient exploration and a comprehensive understanding of the vast chemical space are of great importance to molecular science and applications in drug design and materials discovery. In this paper, we propose a new framework, ChemFlow, to traverse chemical space through navigating the latent space learned by molecule generative models through flows. We introduce a dynamical system perspective that formulates the problem as learning a vector field that transports the mass of the molecular distribution to the region with desired molecular properties or structure diversity. Under this framework, we unify previous approaches on molecule latent space traversal and optimization and propose alternative competing methods incorporating different physical priors. We validate the efficacy of ChemFlow on molecule manipulation and single- and multi-objective molecule optimization tasks under both supervised and unsupervised molecular discovery settings. Codes and demos are publicly available on GitHub at this https URL.},
+  selected          = {true}
 }
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@misc{yao2023readme,
+  title             = {README: Bridging Medical Jargon and Lay Understanding for Patient Education through Data-Centric NLP},
+  author            = {Zonghai Yao and Nandyala Siddharth Kantu and Guanghao Wei and Hieu Tran and Zhangqi Duan and Sunjae Kwon and Zhichao Yang and README annotation team and Hong Yu},
+  year              = {2023},
+  eprint            = {2312.15561},
+  archiveprefix     = {arXiv},
+  primaryclass      = {cs.CL},
+  arxiv             = {2312.15561},
+  doi               = {10.48550/arXiv.2312.15561},
+  pdf               = {https://arxiv.org/pdf/2312.15561.pdf},
+  code              = {https://github.com/seasonyao/NoteAid-README},
+  google_scholar_id = {9yKSN-GCB0IC},
+  bibtex_show       = {true},
+  altmetric         = {true},
+  abstract          = {The advancement in healthcare has shifted focus toward patient-centric approaches, particularly in self-care and patient education, facilitated by access to Electronic Health Records (EHR). However, medical jargon in EHRs poses significant challenges in patient comprehension. To address this, we introduce a new task of automatically generating lay definitions, aiming to simplify complex medical terms into patient-friendly lay language. We first created the README dataset, an extensive collection of over 50,000 unique (medical term, lay definition) pairs and 300,000 mentions, each offering context-aware lay definitions manually annotated by domain experts. We have also engineered a data-centric Human-AI pipeline that synergizes data filtering, augmentation, and selection to improve data quality. We then used README as the training data for models and leveraged a Retrieval-Augmented Generation method to reduce hallucinations and improve the quality of model outputs. Our extensive automatic and human evaluations demonstrate that open-source mobile-friendly models, when fine-tuned with high-quality data, are capable of matching or even surpassing the performance of state-of-the-art closed-source large language models like ChatGPT. This research represents a significant stride in closing the knowledge gap in patient education and advancing patient-centric healthcare solutions.}
 }
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@misc{wei2023grabsampler,
+  title             = {GraB-sampler: Optimal Permutation-based SGD Data Sampler for PyTorch},
+  author            = {Guanghao Wei},
+  year              = {2023},
+  eprint            = {2309.16809},
+  archiveprefix     = {arXiv},
+  primaryclass      = {cs.LG},
+  arxiv             = {2309.16809},
+  doi               = {10.48550/arXiv.2309.16809},
+  pdf               = {https://arxiv.org/pdf/2309.16809},
+  code              = {https://github.com/garywei944/grab-sampler},
+  website           = {https://pypi.org/project/grab-sampler/},
+  google_scholar_id = {d1gkVwhDpl0C},
+  bibtex_show       = {true},
+  altmetric         = {true},
+  abstract          = {The online Gradient Balancing (GraB) algorithm greedily choosing the examples ordering by solving the herding problem using per-sample gradients is proved to be the theoretically optimal solution that guarantees to outperform Random Reshuffling. However, there is currently no efficient implementation of GraB for the community to easily use it. <br><br> This work presents an efficient Python library, GraB-sampler, that allows the community to easily use GraB algorithms and proposes 5 variants of the GraB algorithm. The best performance result of the GraB-sampler reproduces the training loss and test accuracy results while only in the cost of 8.7% training time overhead and 0.85% peak GPU memory usage overhead.},
+  selected          = {true}
 }
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@misc{li2023gpu,
+  title             = {GPU Scheduler for De Novo Genome Assembly with Multiple MPI Processes},
+  author            = {Minhao Li* and Siyu Wang* and Guanghao Wei*},
+  year              = {2023},
+  eprint            = {2309.07270},
+  archiveprefix     = {arXiv},
+  primaryclass      = {cs.DC},
+  arxiv             = {2309.07270},
+  doi               = {10.48550/arXiv.2309.07270},
+  pdf               = {https://arxiv.org/pdf/2309.07270.pdf},
+  code              = {https://github.com/garywei944/ELBA/tree/GPU},
+  poster            = {https://s3.amazonaws.com/garywei.dev/public/posters/ELBA+GPU+poster.pdf},
+  google_scholar_id = {u-x6o8ySG0sC},
+  bibtex_show       = {true},
+  altmetric         = {true},
+  abstract          = {<i>De Novo</i> Genome assembly is one of the most important tasks in computational biology. ELBA is the state-of-the-art distributed-memory parallel algorithm for overlap detection and layout simplification steps of D<i>De Novo</i> genome assembly but exists a performance bottleneck in pairwise alignment. <br><br> In this work, we proposed 3 GPU schedulers for ELBA to accommodate multiple MPI processes and multiple GPUs. The GPU schedulers enable multiple MPI processes to perform computation on GPUs in a round-robin fashion. Both strong and weak scaling experiments show that 3 schedulers are able to significantly improve the performance of baseline while there is a trade-off between parallelism and GPU scheduler overhead. For the best performance implementation, the one-to-one scheduler achieves ∼7-8× speed-up using 25 MPI processes compared with the baseline vanilla ELBA GPU scheduler.}
 }

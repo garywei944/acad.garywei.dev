@@ -1,200 +1,313 @@
 {
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Guanghao Wei",
+    // "label": "Research Assistant",
+    "image": "/asserts/img/avatar.jpg",
+    "email": "gw338@cornell.edu",
+    // "phone": "(912) 555-4321",
+    // "url": "http://www.garywei.dev",
+    "bio": "I work on Machine Learning Systems, AI for science, and High Performance Computing.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      //   "address": "2712 Broadway St",
+      "postalCode": "NY 14850",
+      "city": "Ithaca",
       "countryCode": "US",
-      "region": "California"
+      "region": "New York"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "GaryWeiML",
+        "url": "https://twitter.com/GaryWeiML"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "garywei944",
+        "url": "https://www.linkedin.com/in/garywei944/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Cornell Relax ML Lab",
+      "location": "Ithaca, NY",
+      "description": "Awesome compression company",
+      "position": "Research Assistant",
+      "url": "https://relax-ml.cs.cornell.edu/team/",
+      "startDate": "2023-02-01",
+      "endDate": "2024-05-31",
+      "summary": "Advised by Prof. <a href='https://www.cs.cornell.edu/~cdesa/'>Chris De Sa</a>.",
+      "highlights": [
+        "Efficient ML algorithms and systems",
+        "Optimal data permutation for various optimization algorithms",
+        "Post-training and Training-wared Quantization for Large Language Models"
+      ]
+    },
+    {
+      "name": "UMass BioNLP Lab",
+      "location": "Amherst, MA",
+      "description": "Awesome compression company",
+      "position": "Research Assistant",
+      "url": "https://bio-nlp.org",
+      "startDate": "2021-05-01",
+      "endDate": "2022-06-30",
+      "summary": "Advised by Prof. <a href='https://www.uml.edu/research/chords/faculty/yu-hong.aspx'>Hong Yu</a>.",
+      "highlights": [
+        "Information Retrieval",
+        "Data Processing",
+        "Model Implementation",
+        "Application (Full-stack Web) Implementation"
+      ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "organization": "Cornell Chinese Students and Scholars Association (CSSA)",
+      "location": "Ithaca, NY",
+      "position": "Secretary General",
+      "url": "https://cornellcssa.org/",
+      "startDate": "2022-08-22",
+      "endDate": "2024-05-31",
+      "summary": "",
+      "highlights": [
+        "Leaddership, Executive Board",
+        "Organize events for Chinese students and scholars",
+        "Campus and community service"
+      ]
+    },
+    {
+      "organization": "UMass Chinese Students and Scholars Association (CSSA)",
+      "location": "Amherst, MA",
+      "position": "Member of Personnel Department",
+      "url": "https://www.linkedin.com/company/umasscssa-university-of-massachusetts-amherst-chinese-students-and-scholars-association-/",
+      "startDate": "2018-08-21",
+      "endDate": "2022-05-31",
+      "summary": "",
+      "highlights": [
+        "Organize events for Chinese students and scholars"
+      ]
+    },
+    {
+      "organization": "Cornell Chinese Dragon Soccer Club (CDSC)",
+      "location": "Amherst, MA",
+      "position": "Athlete, Soccer Player",
+      "url": "https://www.youtube.com/@cornellcdsc1429",
+      "startDate": "2022-08-21",
+      "endDate": "2024-05-15",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "organization": "Beijing No.4 High School Soccer Team",
+      "location": "Beijing, China",
+      "position": "Athlete, Soccer Player",
+      "url": "",
+      "startDate": "2015-09-01",
+      "endDate": "2018-05-31",
+      "summary": "",
+      "highlights": []
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Cornell University",
+      "location": "Ithaca, NY",
+      "url": "https://www.cornell.edu/",
+      "area": "Computer Science",
+      "studyType": "Master of Engineering",
+      "startDate": "2022-08-22",
+      "endDate": "2023-12-31",
+      "score": "3.80",
+      "courses": []
+    },
+    {
+      "institution": "University of Massachusetts Amherst",
+      "location": "Amherst, MA",
+      "url": "https://www.umass.edu/",
+      "area": "Mathematics",
+      "studyType": "Bachelor of Science",
+      "startDate": "2018-09-01",
+      "endDate": "2022-05-31",
+      "score": "3.93",
+      "courses": [
+        "Minor in Japanese"
+      ]
+    },
+    {
+      "institution": "University of Massachusetts Amherst",
+      "location": "Amherst, MA",
+      "url": "https://www.umass.edu/",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2018-09-01",
+      "endDate": "2022-05-31",
+      "score": "3.93",
+      "courses": []
+    },
+    {
+      "institution": "Beijing No.4 High School",
+      "location": "Beijing, China",
+      "url": "https://en.wikipedia.org/wiki/Beijing_No.4_High_School",
+      "area": "",
+      "studyType": "High School Diploma",
+      "startDate": "2015-09-01",
+      "endDate": "2018-05-31",
+      "score": "",
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "36th Place of UMass CTF 2024 - Global Leaderboard Top 10%",
+      "url": "https://ctftime.org/event/2287/",
+      "date": "2022-04-21",
+      "awarder": "UMass Cybersecurity Club",
+      "summary": "Team 2TheMoon, Rank 36 on Global Leaderboard"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "Bay State Fellowship Recipient",
+      "url": "https://www.cics.umass.edu/content/bay-state-scholarship-program",
+      "date": "2022-04-15",
+      "awarder": "UMass Amherst College of Information and Computer Sciences",
+      "summary": "2-year Full Graduate Scholarship (Declined)"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "title": "4th Place of UMass CTF 2022 - UMass Leaderboard",
+      "url": "https://ctftime.org/event/1561/",
+      "date": "2022-04-03",
+      "awarder": "UMass Cybersecurity Club",
+      "summary": "Team Hide on Bush, Rank 37 on Global Leaderboard"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "title": "1st Place of Unihack' 21 Hackathon",
+      "url": "https://devpost.com/software/group-8",
+      "date": "2021-08-08",
+      "awarder": "USC CSSA & CSSA UCLA & CMU CSSA",
+      "summary": "￥10,000 Award"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "title": "2nd Place of The 35th Annual Jacob-Cohen-Killam Mathematics Competition",
+      "url": "https://www.umass.edu/mathematics-statistics/undergraduate/math-competition",
+      "date": "2020-04-01",
+      "awarder": "UMass Amherst Mathematics Department",
+      "summary": "$1,000 Award"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "title": "2nd Place of The 34th Annual Jacob-Cohen-Killam Mathematics Competition",
+      "url": "https://www.umass.edu/mathematics-statistics/undergraduate/math-competition",
+      "date": "2019-04-01",
+      "awarder": "UMass Amherst Mathematics Department",
+      "summary": "$1,000 Award"
+    },
+    {
+      "title": "8 Semesters Dean's List at UMass Amherst",
+      "url": "https://www.umass.edu/registrar/students/deans-list",
+      "date": "2022-05-31",
+      "awarder": "University of Massachusetts Amherst",
+      "summary": "GPA 3.50 and above"
+    },
+    {
+      "title": "Chancellor’s Award at UMass Amherst",
+      "url": "https://www.umass.edu/financialaid/undergraduate/undergraduate-scholarships/umass-admissions-scholarships-and-awards",
+      "date": "2018-04-15",
+      "awarder": "University of Massachusetts Amherst",
+      "summary": "$40,000 scholarship for 4 years"
+    },
+    {
+      "title": "Chancellor’s Award at UMass Amherst",
+      "url": "https://www.umass.edu/financialaid/undergraduate/undergraduate-scholarships/umass-admissions-scholarships-and-awards",
+      "date": "2018-04-15",
+      "awarder": "University of Massachusetts Amherst",
+      "summary": "$40,000 scholarship for 4 years"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Web Development",
       "level": "Master",
-      "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Compression",
+      "level": "Master",
+      "keywords": [
+        "Mpeg",
+        "MP4",
+        "GIF"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "English",
+      "fluency": "Profiecient"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Conversational"
     }
   ],
   "interests": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
+      "name": "Wildlife",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Ferrets",
+        "Unicorns"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Miss Direction",
+      "description": "A mapping engine that misguides you",
+      "highlights": [
+        "Won award at AIHacks 2016",
+        "Built by all women team of newbie programmers",
+        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+      ],
+      "keywords": [
+        "GoogleMaps",
+        "Chrome Extension",
+        "Javascript"
+      ],
+      "startDate": "2016-08-24",
+      "endDate": "2016-08-24",
+      "url": "missdirection.example.com",
+      "roles": [
+        "Team lead",
+        "Designer"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
     }
-  ]
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00"
+  }
 }

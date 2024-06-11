@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - garywei944
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - garywei944/ChemFlow
+  - garywei944/grab-sampler
+  - garywei944/FMol
+  - garywei944/KPConv-PyTorch-ShapeNet-Part
+  - garywei944/eva_arch
+  - garywei944/eva_init
