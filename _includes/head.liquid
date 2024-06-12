@@ -147,3 +147,14 @@
 {% if page.tikzjax %}
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}
+
+<!-- bootstrap cookie consent -->
+{% if site.cookie_consent %}
+  <link
+    rel="stylesheet"
+    href="{{ site.third_party_libraries.bootstrap-cookie-alert.url.css }}"
+    integrity="{{ site.third_party_libraries.bootstrap-cookie-alert.integrity.css }}"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  >
+{% endif %}

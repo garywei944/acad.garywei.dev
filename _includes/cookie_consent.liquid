@@ -1,0 +1,15 @@
+{% if site.cookie_consent %}
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+  <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website.
+  <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+  <button type="button" class="btn btn-primary btn-sm acceptcookies">I agree</button>
+</div>
+<script
+  src="{{ site.third_party_libraries.bootstrap-cookie-alert.url.js }}"
+  integrity="{{ site.third_party_libraries.bootstrap-cookie-alert.integrity.js }}"
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+{% endif %}
