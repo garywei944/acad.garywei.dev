@@ -3,7 +3,7 @@ layout: post
 title: Writeup for UMassCTF 2022 - pwn/zip_parser
 date: 2022-04-04
 description: |2-
-  ret2dlresolve on x86_64 with large gap between text and writable sections
+  When a tree falls in the forest with noone around to hear it, some say that no sound is made. Does the same apply to processes without output?
 tags:
   - Binary Exploitation
   - pwn
@@ -23,9 +23,10 @@ ret2dlresolve on x86_64 with large gap between text and writable sections
 - Challenge: [zip_parser](https://github.com/UMassCybersecurity/UMassCTF-2022-challenges/tree/main/pwn/zip_parser)
 - Category: pwn
 - Points: 500
-- Author: [seal9055](https://github.com/seal9055)
-- Description: When a tree falls in the forest with noone around to hear it, some say that no sound is made. Does the same apply to processes without output?
+- Challenge Author: [seal9055](https://github.com/seal9055)
 - Solution: [solve.py](https://github.com/garywei944/umass_ctf_2022/blob/main/pwn/zip_parser/solve.py)
+
+> When a tree falls in the forest with noone around to hear it, some say that no sound is made. Does the same apply to processes without output?
 
 ## TL;DR
 
