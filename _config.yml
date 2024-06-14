@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Gary Wei's Academic Portfolio
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://aws.amazon.com/cloudfront/" target="_blank">AWS Cloudfront</a>.
+  Hosted on <a href="https://aws.amazon.com/cloudfront/" target="_blank">AWS Cloudfront</a>.
 keywords: gary, garywei944, guanghao, gary wei, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
