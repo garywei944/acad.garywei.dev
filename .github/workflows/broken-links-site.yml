@@ -2,7 +2,7 @@ name: Check for broken links on site
 
 on:
   workflow_run:
-    workflows: [Deploy site]
+    workflows: [Deploy site to AWS]
     types: [completed]
 
 jobs:
