@@ -125,13 +125,23 @@
               var textAdder = setInterval(function(){
                 element.html(more_authors_text.substring(0, cursorPosition + 1));
                 if (++cursorPosition == more_authors_text.length){
-                  clearInterval(textAdder);
+                clearInterval(textAdder);
                 }
             }, '{{site.more_authors_animation_delay}}');
           "
         >
           {{- more_authors_hide -}}
         </span>
+      {% endif %}
+      {% if entry.annotation %}
+        <i
+          class="fa-solid fa-circle-info ml-1"
+          data-toggle="popover"
+          data-placement="top"
+          data-html="true"
+          data-content="{{ entry.annotation | escape }}"
+        >
+        </i>
       {% endif %}
     </div>
 
