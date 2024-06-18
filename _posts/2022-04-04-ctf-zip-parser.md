@@ -67,8 +67,8 @@ exploit it.
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_main.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `main()` function is the entry point to the binary. It read the size of zip
-file first, and then read the zip file. It parses *End of Central Directory*,
-*Central Directory*, *Local Header* in order after read.
+file first, and then read the zip file. It parses _End of Central Directory_,
+_Central Directory_, _Local Header_ in order after read.
 
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/diagram1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -76,8 +76,8 @@ file first, and then read the zip file. It parses *End of Central Directory*,
 
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_parse_head.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-Recall the layout of zip file and ***End of central directory record (
-EOCD)***
+Recall the layout of zip file and **_End of central directory record (
+EOCD)_**
 
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/eocd.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -92,7 +92,7 @@ the program.
 
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_parse_centdir.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-`parse_centdir()` parse n sections of ***Central directory file header***.
+`parse_centdir()` parse n sections of **_Central directory file header_**.
 
 {% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/cdfh.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
@@ -148,7 +148,7 @@ After hours of googling, ret2dlresolve is the attack method that works if we
 can execute a ROP chain but can't leak any address from memory.
 
 I have found these online resources that are crucial for me to solve this
-challenge. *(Bear with me the most useful one is in Chinese)*
+challenge. _(Bear with me the most useful one is in Chinese)_
 
 #### Very helpful Resources
 
@@ -170,13 +170,13 @@ library. `__dl_runtime_resolve(link_map, rel_offset)` is called to do the job.
 To do so, the running program
 
 1. jumpy to `func@.plt` (using index 1 for example)
-    1. `0x401044` pushes the index 1 onto the stack, which is the index of such
-       function on GOT, used as `rel_offset` later
+   1. `0x401044` pushes the index 1 onto the stack, which is the index of such
+      function on GOT, used as `rel_offset` later
 2. jump to `.plt`
-    1. `0x401020` pushes `0x404008 <_GLOBAL_OFFSET_TABLE_+0x8>` onto the stack,
-       which is a pointer points to the ture `link_map` in `ld.so`.
-    2. `0x401026` jump to `*0x404010 <_GLOBAL_OFFSET_TABLE_+0x10>`, which is a
-       pointer points to the actual address of `__dl_runtime_resolve()`.
+   1. `0x401020` pushes `0x404008 <_GLOBAL_OFFSET_TABLE_+0x8>` onto the stack,
+      which is a pointer points to the ture `link_map` in `ld.so`.
+   2. `0x401026` jump to `*0x404010 <_GLOBAL_OFFSET_TABLE_+0x10>`, which is a
+      pointer points to the actual address of `__dl_runtime_resolve()`.
 
 ```console
 $ objdump -dS chal
@@ -188,11 +188,11 @@ Disassembly of section .plt:
   401020:	ff 35 e2 2f 00 00    	pushq  0x2fe2(%rip)        # 404008 <_GLOBAL_OFFSET_TABLE_+0x8>
   401026:	f2 ff 25 e3 2f 00 00 	bnd jmpq *0x2fe3(%rip)        # 404010 <_GLOBAL_OFFSET_TABLE_+0x10>
   40102d:	0f 1f 00             	nopl   (%rax)
-  401030:	f3 0f 1e fa          	endbr64 
+  401030:	f3 0f 1e fa          	endbr64
   401034:	68 00 00 00 00       	pushq  $0x0
   401039:	f2 e9 e1 ff ff ff    	bnd jmpq 401020 <.plt>
   40103f:	90                   	nop
-  401040:	f3 0f 1e fa          	endbr64 
+  401040:	f3 0f 1e fa          	endbr64
   401044:	68 01 00 00 00       	pushq  $0x1
   401049:	f2 e9 d1 ff ff ff    	bnd jmpq 401020 <.plt>
   40104f:	90                   	nop
@@ -200,12 +200,12 @@ Disassembly of section .plt:
 ```
 
 3. inside `__dl_runtime_resolve()`,
-    1. pop the address of `link_map` and `rel_offset` from the stack
-    2. locate the strut in `.dynamic` for `.rel.plt` using `link_map`
-    3. locate `.rel.plt` using data in `.dynamic` and `rel_offset`
-    4. locate `.symtab` using data in `.rel.plt`
-    5. locate `.strtab` using data in `symtab` and load its name, e.g. "system"
-    6. load the address of such function from the library into GOT
+   1. pop the address of `link_map` and `rel_offset` from the stack
+   2. locate the strut in `.dynamic` for `.rel.plt` using `link_map`
+   3. locate `.rel.plt` using data in `.dynamic` and `rel_offset`
+   4. locate `.symtab` using data in `.rel.plt`
+   5. locate `.strtab` using data in `symtab` and load its name, e.g. "system"
+   6. load the address of such function from the library into GOT
 4. call the function with arguments in registers
 
 #### ret2dlresolve in general
@@ -236,12 +236,12 @@ and [rop.ret2dlresolve](https://github.com/Gallopsled/pwntools/blob/67b28491a4/p
 #### Problems on 64-bit machine with large page
 
 The above approach has problems for 64-bit binary with large gap between text
-and writable sections. `_dl_fixup`  plays a role here which is not an issue on
+and writable sections. `_dl_fixup` plays a role here which is not an issue on
 32-bit machines. It is explained in detail
 in [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull) '
 s write up.
 
-> The problem with this attack is that _dl_fixup uses the same array index for both SYMTAB and VERSYM. Each element in each of these arrays is a different size (24 and 2 bytes, respectively), so using the same index for both results in vastly different addresses for the structs. In binaries with BSS close to the other sections, this can sometimes work out. However, in 64-bit binaries that use huge pages (so BSS is very far from the other sections), this guarantees a segmentation fault when trying to index VERSYM if the structs are placed in BSS.
+> The problem with this attack is that \_dl_fixup uses the same array index for both SYMTAB and VERSYM. Each element in each of these arrays is a different size (24 and 2 bytes, respectively), so using the same index for both results in vastly different addresses for the structs. In binaries with BSS close to the other sections, this can sometimes work out. However, in 64-bit binaries that use huge pages (so BSS is very far from the other sections), this guarantees a segmentation fault when trying to index VERSYM if the structs are placed in BSS.
 
 This is the case where pwntools automation ret2dlresolve doesn't work.
 
@@ -513,13 +513,13 @@ Tracking the `link_map` on gdb
 
 1. GOT[2], ptr to `link_map`
 2. the `link_map`
-3. `l_info[23]` in `link_map`, ptr to DT_JMPREL in _DYNAMIC
-4. DT_JMPREL in _DYNAMIC, ptr to DT_JMPREL. The struct contains `d_tag`,
+3. `l_info[23]` in `link_map`, ptr to DT_JMPREL in \_DYNAMIC
+4. DT_JMPREL in \_DYNAMIC, ptr to DT_JMPREL. The struct contains `d_tag`,
    and `d_val`, 16 bytes in total.
 5. DT_JMPREL, the `.rel.plt` table, we can tell `0x404018` at the first entry
    is the address for `strcpy@got`
 
-So we need to make a struct for fake _DYNAMIC, and a struct for fake `.rel.plt`
+So we need to make a struct for fake \_DYNAMIC, and a struct for fake `.rel.plt`
 
 ```python
 # DT_JMPREL in _DYNAMIC
@@ -538,7 +538,7 @@ jmprel = flat([
 ```
 
 DT_SYMTAB and DT_STRTAB works almost the same. We need a struct for fake
-DT_SYMTAB in _DYNAMIC, a struct for fake `.symtab`, and a `\bin\sh\00` string.
+DT_SYMTAB in \_DYNAMIC, a struct for fake `.symtab`, and a `\bin\sh\00` string.
 
 Merge the forged tables together, we end up with the following `forge_data`.
 For no good reason, I use `.bss + 0x100` to write the forge data.
@@ -568,7 +568,7 @@ forge_data = flat({
     ]),
     # for DT_SYMTAB
     0x38: flat([
-        0,  # d_tag 
+        0,  # d_tag
         elf.got[target_func] - 0x8  # d_val, ptr to DT_SYMTAB
         # s.t. st_value pts to the target function in GOT
     ]),
@@ -590,7 +590,7 @@ forge_data = flat({
 
 The ROP chain would be relatively simple.
 
-1. read the `forge_data`   into `.bss + 0x100`
+1. read the `forge_data` into `.bss + 0x100`
 2. call `_dl_runtime_resolve` with the parameters and put `rel_offset`
    and `link_map` on stack
 3. align the stack if needed
@@ -920,7 +920,7 @@ details.
 
 ## Reference
 
-- [ZIP (file format) - Wikipedia](https://en.wikipedia.org/wiki/ZIP_(file_format))
+- [ZIP (file format) - Wikipedia](<https://en.wikipedia.org/wiki/ZIP_(file_format)>)
 - [ret2dlresolve超详细教程(x86&x64)](https://blog.csdn.net/qq_51868336/article/details/114644569)
 - [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
 - [0ctf babystack with return-to dl-resolve](https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62)

@@ -61,7 +61,7 @@ def mod_add(a, b, m):
 ```
 
 - `bytes_to_mat()` converts the passed in bytes string to its binary
-  representation in 256 bits and make a 16*16 logical matrix.
+  representation in 256 bits and make a 16\*16 logical matrix.
 - `mat_to_bytes()` just reverse the above process
 - `mod_mul(a, b, m)` is equivalent to the following numpy
   statement `return (a @ b) % m`, where `@` is the matrix multiplication
@@ -113,8 +113,8 @@ passphrase. Unfortunately, it's not that easy.
 
 Then I try to work on the properties of random generalized square matrix and
 logical matrix. I noticed that almost every random initialized 16*16 logical
-matrix is invertible (with ~ `(16*15/2) / 2^16 ~= 0.35%` it's not). And
-elementwise `A + B = A xor B`, `A * B = A & B` for A, B logical matrix. But
+matrix is invertible (with ~ `(16*15/2) / 2^16 ~= 0.35%`it's not). And
+elementwise`A + B = A xor B`, `A \* B = A & B` for A, B logical matrix. But
 they didn't extend to matrix multiplication. I also thought of matrix
 decomposition, but didn't make more progress in the end.
 
