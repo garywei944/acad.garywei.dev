@@ -8,7 +8,7 @@ module Jekyll
 	    end
 
       # Clean superscripts in author lists
-      input = input.gsub(/^.*\bauthor\b *= *\{.*$\n/) { |line| line.gsub(/[*†‡§¶‖&^]/, '') }
+      input = input.gsub(/^.*\bauthor\b *= *\{.*$\n/) { |line| line.gsub(/[*∗†‡§¶‖&^]/, '') }
 
       return input
     end

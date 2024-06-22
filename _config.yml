@@ -362,6 +362,8 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    dimensions,
+    google_scholar_id,
     html,
     pdf,
     poster,
@@ -370,8 +372,7 @@ filtered_bibtex_keywords:
     slides,
     supp,
     video,
-    website,
-    google_scholar_id,
+    website
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
