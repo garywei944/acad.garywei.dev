@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writeup for UMassCTF 2022 - crypto/hatmash
+title: "CTF Crypto Challenge Writeup: Cracking the Hatmash Hash Function with Matrix Operations"
 date: 2022-04-06
 description: |2-
   What do you mean 	&quot;We think you spend too much time with matrices.	&quot;? It's just a hash function, jeez...
@@ -24,7 +24,7 @@ toc:
 
 > What do you mean "We think you spend too much time with matrices."? It's just a hash function, jeez...
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-06-ctf-hatmash/images/execution.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-06-ctf-hatmash/images/execution.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Explore and Analysis
 
@@ -138,7 +138,7 @@ So my algorithm is
 
 Implemented at [`solve.old.py`](https://github.com/garywei944/umass_ctf_2022/blob/main/crypto/hatmash/solve.old.py).
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-06-ctf-hatmash/images/execution_old.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-06-ctf-hatmash/images/execution_old.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Shorter payload
 
@@ -153,5 +153,5 @@ ALP.
 So we compute all possible combination to expand `t` with `cccc...ccct`, and
 choose the one that has least `lcm(m, n)`.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-06-ctf-hatmash/images/execution_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-06-ctf-hatmash/images/execution_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-06-ctf-hatmash/images/execution_1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-06-ctf-hatmash/images/execution_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}

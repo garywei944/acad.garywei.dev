@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Writeup for UMassCTF 2022 - pwn/zip_parser
+title: "Advanced CTF Writeup: Exploiting Buffer Overflow in ZIP Parser with ret2dlresolve"
 date: 2022-04-04
 description: |2-
   When a tree falls in the forest with noone around to hear it, some say that no sound is made. Does the same apply to processes without output?
@@ -53,7 +53,7 @@ reverse engineering.
 
 ### checksec
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/checksec.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/checksec.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Reversing
 
@@ -64,22 +64,22 @@ exploit it.
 
 #### `main()`
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_main.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/dis_main.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `main()` function is the entry point to the binary. It read the size of zip
 file first, and then read the zip file. It parses _End of Central Directory_,
 _Central Directory_, _Local Header_ in order after read.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/diagram1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/diagram1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### `parse_head()`
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_parse_head.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/dis_parse_head.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 Recall the layout of zip file and **_End of central directory record (
 EOCD)_**
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/eocd.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/eocd.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `parse_head()` search for the keyword `0x06054b50` that recognize EOCD and load
 useful information from it. The parsed data is then stored in a header struct
@@ -90,21 +90,21 @@ the program.
 
 #### `parse_centdir()`
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_parse_centdir.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/dis_parse_centdir.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `parse_centdir()` parse n sections of **_Central directory file header_**.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/cdfh.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/cdfh.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 #### `parse_data()`
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/dis_parse_data.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/dis_parse_data.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 `parse_data()` read data from the Local file header, `memcpy` the compressed
 data to a buffer on stack and then `strcpy` it to a newly allocated buffer on
 heap.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/lfh.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/lfh.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 Here comes our buffer flow vulnerability. The `comp_size` is read in line 15
 and 18 without any boundary check, and it could be a different number from the
@@ -509,7 +509,7 @@ link_map = flat({
 
 Tracking the `link_map` on gdb
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/link_map_rel_plt.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/link_map_rel_plt.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 1. GOT[2], ptr to `link_map`
 2. the `link_map`
@@ -693,7 +693,7 @@ should read the `forge_data` on to `forge_area`. We can verify it in gdb that
 the program return to `_dl_runtime_resolve` with the correct register and stack
 setup.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/gdb_before_resolve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/gdb_before_resolve.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 1. pointer to the forge `link_map` is the first value on stack, followed by
    the `rel_offset = 0`
@@ -702,7 +702,7 @@ setup.
 
 Therefore, we resolve to `system` successfully with the desired parameter.
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/gdb_enter_system.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/gdb_enter_system.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Execution
 
@@ -882,7 +882,7 @@ io.send(forge_data)
 io.interactive()
 ```
 
-{% include figure.liquid loading="eager" path="/assets/posts/2022-04-04-ctf-zip-parser/images/execution.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.liquid loading="eager" path="/assets/img/posts/2022-04-04-ctf-zip-parser/images/execution.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ## Thoughts
 

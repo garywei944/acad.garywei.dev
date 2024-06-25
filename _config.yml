@@ -14,7 +14,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted on <a href="https://aws.amazon.com/cloudfront/" target="_blank">AWS Cloudfront</a>.
-keywords: gary, garywei944, guanghao, gary wei, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: gary, garywei944, guanghao, gary wei, academic-website, portfolio-website, al-folio # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -128,6 +128,9 @@ pirsch_analytics: y0eT6MWdOVqww1HwM4aavOMTYN9PaHVU # your Pirsch analytics site 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: K1OdvLepLCpb8OEfNoo6iKo3uodFpG_bmnnlNALza5g # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
+
+# For Google Search Optimization
+robots: "index, follow" # options: "noindex, nofollow", "noindex, follow", "index, nofollow", "index, follow"
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -372,7 +375,7 @@ filtered_bibtex_keywords:
     slides,
     supp,
     video,
-    website
+    website,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
