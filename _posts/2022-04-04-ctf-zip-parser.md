@@ -2,7 +2,7 @@
 layout: post
 title: "Advanced CTF Writeup: Exploiting Buffer Overflow in ZIP Parser with ret2dlresolve"
 date: 2022-04-04
-description: |2-
+description: >-
   When a tree falls in the forest with noone around to hear it, some say that no sound is made. Does the same apply to processes without output?
 tags:
   - Binary Exploitation

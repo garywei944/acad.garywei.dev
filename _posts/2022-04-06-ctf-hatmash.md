@@ -2,8 +2,8 @@
 layout: post
 title: "CTF Crypto Challenge Writeup: Cracking the Hatmash Hash Function with Matrix Operations"
 date: 2022-04-06
-description: |2-
-  What do you mean 	&quot;We think you spend too much time with matrices.	&quot;? It's just a hash function, jeez...
+description: >-
+  What do you mean &quot;We think you spend too much time with matrices.&quot;? It's just a hash function, jeez...
 tags:
   - crypto
   - UMassCTF
