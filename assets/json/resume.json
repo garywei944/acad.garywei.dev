@@ -30,9 +30,20 @@
   },
   "work": [
     {
+      "name": "ByteDance Inc",
+      "location": "San Jose, CA",
+      "description": "",
+      "position": "Machine Learning Engineer",
+      "url": "https://www.bytedance.com/",
+      "startDate": "2024-07-29",
+      "endDate": "",
+      "summary": "Model Training Infrastructure",
+      "highlights": []
+    },
+    {
       "name": "Cornell Relax ML Lab",
       "location": "Ithaca, NY",
-      "description": "Awesome compression company",
+      "description": "",
       "position": "Research Assistant",
       "url": "https://relax-ml.cs.cornell.edu/team/",
       "startDate": "2023-02-01",
@@ -47,7 +58,7 @@
     {
       "name": "UMass BioNLP Lab",
       "location": "Amherst, MA",
-      "description": "Awesome compression company",
+      "description": "",
       "position": "Research Assistant",
       "url": "https://bio-nlp.org",
       "startDate": "2021-05-01",

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Research Assistant @ <a href='https://relax-ml.cs.cornell.edu/team/'>Cornell Relax ML Lab</a>
+subtitle: MLE @ <a href="">ByteDance</a> | RA @ <a href='https://relax-ml.cs.cornell.edu/team/'>Cornell Relax ML Lab</a>
 
 profile:
   align: right
@@ -18,7 +18,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 My research interests lie at the intersection of Machine Learning Systems, High Performance Computing, and AI for Science, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
-I work at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) advised by [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
+I was a Research Assistant at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) advised by [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
 Grounded in mathematical principles, our work aims to expedite large-scale, high-performance machine learning systems that are efficient, parallel, and distributed in real-world settings.
 Parallel to this, I collaborate on AI-driven molecule generation with talented Ph.D. students.
 
