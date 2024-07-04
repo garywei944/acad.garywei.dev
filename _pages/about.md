@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: MLE @ <a href="">ByteDance</a> | RA @ <a href='https://relax-ml.cs.cornell.edu/team/'>Cornell Relax ML Lab</a>
+subtitle: MLE @ <a href="https://www.bytedance.com/">ByteDance</a> | RA @ <a href='https://relax-ml.cs.cornell.edu/team/'>Cornell Relax ML Lab</a>
 
 profile:
   align: right
