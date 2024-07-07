@@ -2,16 +2,15 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-# title: Gary Wei | Machine Learning # the website title (if blank, full name will be used instead)
 title: Gary Wei | Machine Learning # the website title (if blank, full name will be used instead)
 first_name: Guanghao
 middle_name:
 last_name: Wei
 preferred_name: Gary
 email: gw338@gmail.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: >- # the ">" symbol means to ignore newlines until "footer_text:"
   Gary Wei's Academic Portfolio
-footer_text: >
+footer_text: >-
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted on <a href="https://aws.amazon.com/cloudfront/" target="_blank">AWS Cloudfront</a>.
 keywords: gary, garywei944, guanghao, gary wei, academic-website, portfolio-website, al-folio # add your own keywords or leave empty
@@ -65,7 +64,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/staticimage.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: https://acad.garywei.dev/assets/img/staticimage.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
