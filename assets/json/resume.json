@@ -2,18 +2,18 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Guanghao Wei",
-    // "label": "Research Assistant",
-    "image": "/asserts/img/avatar.jpg",
+    // "label": "Machine Learning Engineer",
+    // "image": "/asserts/img/avatar.jpg",
     "email": "gw338@cornell.edu",
     // "phone": "(912) 555-4321",
-    // "url": "http://www.garywei.dev",
+    // "url": "https://www.garywei.dev",
     "bio": "I work on Machine Learning Systems, AI for science, and High Performance Computing.",
     "location": {
-      //   "address": "2712 Broadway St",
-      "postalCode": "NY 14850",
-      "city": "Ithaca",
+      // "address": "2712 Broadway St",
+      "postalCode": "CA 95110",
+      "city": "San Jose",
       "countryCode": "US",
-      "region": "New York"
+      "region": "California"
     },
     "profiles": [
       {
@@ -35,8 +35,8 @@
       "description": "",
       "position": "Machine Learning Engineer",
       "url": "https://www.bytedance.com/",
-      "startDate": "2024-07-29",
-      "endDate": "",
+      "startDate": "2024-08-05",
+      // "endDate": "",
       "summary": "Model Training Infrastructure",
       "highlights": []
     },
@@ -64,7 +64,12 @@
       "startDate": "2021-05-01",
       "endDate": "2022-06-30",
       "summary": "Advised by Prof. <a href='https://www.uml.edu/research/chords/faculty/yu-hong.aspx'>Hong Yu</a>.",
-      "highlights": ["Information Retrieval", "Data Processing", "Model Implementation", "Application (Full-stack Web) Implementation"]
+      "highlights": [
+        "Information Retrieval",
+        "Data Processing",
+        "Model Implementation",
+        "Application (Full-stack Web) Implementation"
+      ]
     }
   ],
   "volunteer": [
@@ -76,7 +81,11 @@
       "startDate": "2022-08-22",
       "endDate": "2024-05-31",
       "summary": "",
-      "highlights": ["Leaddership, Executive Board", "Organize events for Chinese students and scholars", "Campus and community service"]
+      "highlights": [
+        "Leaddership, Executive Board",
+        "Organize events for Chinese students and scholars",
+        "Campus and community service"
+      ]
     },
     {
       "organization": "UMass Chinese Students and Scholars Association (CSSA)",
@@ -86,7 +95,9 @@
       "startDate": "2018-08-21",
       "endDate": "2022-05-31",
       "summary": "",
-      "highlights": ["Organize events for Chinese students and scholars"]
+      "highlights": [
+        "Organize events for Chinese students and scholars"
+      ]
     },
     {
       "organization": "Cornell Chinese Dragon Soccer Club (CDSC)",
@@ -130,7 +141,9 @@
       "startDate": "2018-09-01",
       "endDate": "2022-05-31",
       "score": "3.93",
-      "courses": ["Minor in Japanese"]
+      "courses": [
+        "Minor in Japanese"
+      ]
     },
     {
       "institution": "University of Massachusetts Amherst",
@@ -233,12 +246,20 @@
     {
       "name": "Web Development",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "Javascript"]
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
     },
     {
       "name": "Compression",
       "level": "Master",
-      "keywords": ["Mpeg", "MP4", "GIF"]
+      "keywords": [
+        "Mpeg",
+        "MP4",
+        "GIF"
+      ]
     }
   ],
   "languages": [
@@ -258,7 +279,10 @@
   "interests": [
     {
       "name": "Wildlife",
-      "keywords": ["Ferrets", "Unicorns"]
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
     }
   ],
   "references": [
@@ -276,11 +300,18 @@
         "Built by all women team of newbie programmers",
         "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
       ],
-      "keywords": ["GoogleMaps", "Chrome Extension", "Javascript"],
+      "keywords": [
+        "GoogleMaps",
+        "Chrome Extension",
+        "Javascript"
+      ],
       "startDate": "2016-08-24",
       "endDate": "2016-08-24",
       "url": "missdirection.example.com",
-      "roles": ["Team lead", "Designer"],
+      "roles": [
+        "Team lead",
+        "Designer"
+      ],
       "entity": "Smoogle",
       "type": "application"
     }
