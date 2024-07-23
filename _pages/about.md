@@ -9,8 +9,8 @@ profile:
   image: avatar.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Cornell University</p>
-    <p>New York, NY 14850</p>
+    <p>ByteDance, Ltd.</p>
+    <p>San Jose, CA 95110</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
