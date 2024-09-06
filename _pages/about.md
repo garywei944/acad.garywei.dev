@@ -9,7 +9,7 @@ profile:
   image: avatar.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>ByteDance, Ltd.</p>
+    <p>ByteDance Ltd.</p>
     <p>San Jose, CA 95110</p>
 
 news: true # includes a list of news items
