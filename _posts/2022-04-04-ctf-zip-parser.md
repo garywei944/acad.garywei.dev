@@ -154,7 +154,7 @@ challenge. _(Bear with me the most useful one is in Chinese)_
 
 - [ret2dlresolve超详细教程(x86&x64)](https://blog.csdn.net/qq_51868336/article/details/114644569)
   \- the resource that I followed to develop this exploitation
-- [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
+- [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://web.archive.org/web/20240726184222/https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
   \- clear and understandable explanation to ret2dlresolve
 - [0ctf babystack with return-to dl-resolve](https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62)
   \- another understandable explanation to ret2dlresolve, but on x86

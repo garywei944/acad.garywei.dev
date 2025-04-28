@@ -25,6 +25,6 @@ Parallel to this, I collaborate on AI-driven molecule generation with talented P
 My academic journey has led me to a Master of Engineering in Computer Science at Cornell University.
 Prior to this, I pursued dual B.S. degrees in Computer Science and Mathematics at the University of Massachusetts Amherst, complemented by a minor in Japanese.
 My specialization in Mathematics focused on Applied Math and Scientific Computing.
-Prior to my graduation, I engaged in research at the [UMass BioNLP Lab](https://bio-nlp.org/) under [Prof. Hong Yu](https://www.uml.edu/research/chords/faculty/yu-hong.aspx), concentrating on bio-medical and clinical NLP applications within Electronic Health Records.
+Prior to my graduation, I engaged in research at the [UMass BioNLP Lab](https://bio-nlp.github.io/) under [Prof. Hong Yu](https://www.uml.edu/research/chords/faculty/yu-hong.aspx), concentrating on bio-medical and clinical NLP applications within Electronic Health Records.
 
 _**Check out [garywei.dev](https://www.garywei.dev/) for my personal website!**_
