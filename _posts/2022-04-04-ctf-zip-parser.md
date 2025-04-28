@@ -238,7 +238,7 @@ and [rop.ret2dlresolve](https://github.com/Gallopsled/pwntools/blob/67b28491a4/p
 The above approach has problems for 64-bit binary with large gap between text
 and writable sections. `_dl_fixup` plays a role here which is not an issue on
 32-bit machines. It is explained in detail
-in [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull) '
+in [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://web.archive.org/web/20240726184222/https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull) '
 s write up.
 
 > The problem with this attack is that \_dl_fixup uses the same array index for both SYMTAB and VERSYM. Each element in each of these arrays is a different size (24 and 2 bytes, respectively), so using the same index for both results in vastly different addresses for the structs. In binaries with BSS close to the other sections, this can sometimes work out. However, in 64-bit binaries that use huge pages (so BSS is very far from the other sections), this guarantees a segmentation fault when trying to index VERSYM if the structs are placed in BSS.
@@ -282,7 +282,7 @@ by this method.
 ### Another approach to ret2dlresolve - corrupt `.dynamic`
 
 Another approach is described
-in [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
+in [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://web.archive.org/web/20240726184222/https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
 . It makes a lot of confusion to me at first because he has a variable
 named `link_map` in the exploitation. However, it turns out that he didn't
 manually make a `link_map`, but to corrupt the address of DT_STRTAB
@@ -922,6 +922,6 @@ details.
 
 - [ZIP (file format) - Wikipedia](<https://en.wikipedia.org/wiki/ZIP_(file_format)>)
 - [ret2dlresolve超详细教程(x86&x64)](https://blog.csdn.net/qq_51868336/article/details/114644569)
-- [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
+- [redpwnCTF 2021 - devnull-as-a-service (pwn)](https://web.archive.org/web/20240726184222/https://activities.tjhsst.edu/csc/writeups/redpwnctf-2021-devnull)
 - [0ctf babystack with return-to dl-resolve](https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62)
 - [ret2dlresolve利用方法](https://blog.csdn.net/qq_38204481/article/details/90074190)
