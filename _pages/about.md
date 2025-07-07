@@ -10,6 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>ByteDance Ltd.</p>
+    <p>1199 Coleman Ave.</p>
     <p>San Jose, CA 95110</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
