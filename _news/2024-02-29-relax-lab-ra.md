@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am happy to continue my position at the [Relax Lab](https://relax-ml.cs.cornell.edu/team/) at Cornell University as a graduate researcher. :computer:
+I am happy to continue my position at the [Relax ML Lab](https://relax-ml.cs.cornell.edu/team/) at Cornell University as a graduate researcher. :computer:

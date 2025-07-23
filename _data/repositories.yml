@@ -4,7 +4,7 @@ github_users:
 github_repos:
   - garywei944/ChemFlow
   - garywei944/grab-sampler
-  - garywei944/FMol
-  - garywei944/KPConv-PyTorch-ShapeNet-Part
   - garywei944/eva_arch
   - garywei944/eva_init
+  - garywei944/umass_ctf_2022
+  - garywei944/reverse_shell_x86-64
