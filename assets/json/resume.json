@@ -64,7 +64,12 @@
       "startDate": "2021-05-01",
       "endDate": "2022-06-30",
       "summary": "Advised by Prof. <a href='https://www.uml.edu/research/chords/faculty/yu-hong.aspx'>Hong Yu</a>.",
-      "highlights": ["Information Retrieval", "Data Processing", "Model Implementation", "Application (Full-stack Web) Implementation"]
+      "highlights": [
+        "Information Retrieval",
+        "Data Processing",
+        "Model Implementation",
+        "Application (Full-stack Web) Implementation"
+      ]
     }
   ],
   "volunteer": [
@@ -76,7 +81,11 @@
       "startDate": "2022-08-22",
       "endDate": "2024-05-31",
       "summary": "",
-      "highlights": ["Leaddership, Executive Board", "Organize events for Chinese students and scholars", "Campus and community service"]
+      "highlights": [
+        "Leaddership, Executive Board",
+        "Organize events for Chinese students and scholars",
+        "Campus and community service"
+      ]
     },
     {
       "organization": "UMass Chinese Students and Scholars Association (CSSA)",
@@ -86,7 +95,9 @@
       "startDate": "2018-08-21",
       "endDate": "2022-05-31",
       "summary": "",
-      "highlights": ["Organize events for Chinese students and scholars"]
+      "highlights": [
+        "Organize events for Chinese students and scholars"
+      ]
     },
     {
       "organization": "Shanghai Jiao Tong University Soccer Club (JTUSC)",
@@ -146,8 +157,12 @@
       "startDate": "2018-09-01",
       "endDate": "2022-05-31",
       "score": "3.93",
-      "courses": ["Minor in Japanese"],
-      "highlights": ["Scientific Computing"]
+      "courses": [
+        "Minor in Japanese"
+      ],
+      "highlights": [
+        "Scientific Computing"
+      ]
     },
     {
       "institution": "University of Massachusetts Amherst",
@@ -159,7 +174,10 @@
       "endDate": "2022-05-31",
       "score": "3.93",
       "courses": [],
-      "highlights": ["Biomedical Natural Language Processing", "Vulnerability Analysis and Reverse Engineering"]
+      "highlights": [
+        "Biomedical Natural Language Processing",
+        "Vulnerability Analysis and Reverse Engineering"
+      ]
     },
     {
       "institution": "Beijing No.4 High School",
@@ -176,9 +194,16 @@
   ],
   "awards": [
     {
+      "title": "6th Place of UMass CTF 2026 - Global Leaderboard over 865 teams",
+      "url": "https://ctftime.org/event/2637/",
+      "date": "2026-04-10",
+      "awarder": "UMass Cybersecurity Club",
+      "summary": "Team 2th3mo0n, Rank 6 on Global Leaderboard"
+    },
+    {
       "title": "36th Place of UMass CTF 2024 - Global Leaderboard Top 10%",
       "url": "https://ctftime.org/event/2287/",
-      "date": "2022-04-21",
+      "date": "2024-04-21",
       "awarder": "UMass Cybersecurity Club",
       "summary": "Team 2TheMoon, Rank 36 on Global Leaderboard"
     },
