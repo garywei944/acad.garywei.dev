@@ -10,7 +10,9 @@ _site
 .venv
 assets/libs/
 assets/rendercv/rendercv_output/*.typ
-Gemfile.lock
+al-folio-upgrade-report.md
 node_modules/
 vendor
 .vscode
+output/playwright/
+test-results/

@@ -5,6 +5,8 @@ du:
 duan:
   - firstname: ["Chenru"]
     url: https://www.crduan.com/
+  - firstname: ["Zhangqi"]
+    url: https://gavinduan513.github.io/
 
 huang:
   - firstname: ["Yining"]
@@ -13,10 +15,6 @@ huang:
 song:
   - firstname: ["Yue"]
     url: https://kingjamessong.github.io/
-
-duan:
-  - firstname: ["Zhangqi"]
-    url: https://gavinduan513.github.io/
 
 yu:
   - firstname: ["Hong"]
