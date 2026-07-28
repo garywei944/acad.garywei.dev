@@ -5,6 +5,7 @@ echo "Entry point script running"
 
 CONFIG_FILE=_config.yml
 DOCKER_DESTINATION=/tmp/_site
+JEKYLL_PID=""
 
 # Function to manage Gemfile.lock
 manage_gemfile_lock() {
@@ -30,21 +31,56 @@ ensure_bundle_deps() {
     bundle install --jobs 4 --retry 3
 }
 
+stop_jekyll() {
+    if [ -n "$JEKYLL_PID" ] && kill -0 "$JEKYLL_PID" 2>/dev/null; then
+        kill -TERM "$JEKYLL_PID" 2>/dev/null || true
+        for _ in $(seq 1 50); do
+            if ! kill -0 "$JEKYLL_PID" 2>/dev/null; then
+                break
+            fi
+            sleep 0.1
+        done
+        if kill -0 "$JEKYLL_PID" 2>/dev/null; then
+            kill -KILL "$JEKYLL_PID" 2>/dev/null || true
+        fi
+        wait "$JEKYLL_PID" 2>/dev/null || true
+    fi
+    JEKYLL_PID=""
+}
+
+cleanup() {
+    stop_jekyll
+}
+
+trap cleanup EXIT
+trap 'exit 0' INT TERM
+
 start_jekyll() {
     manage_gemfile_lock
     ensure_bundle_deps
     mkdir -p "$DOCKER_DESTINATION"
-    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling --destination "$DOCKER_DESTINATION" --config "$CONFIG_FILE" &
+    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling --disable-disk-cache --destination "$DOCKER_DESTINATION" --config "$CONFIG_FILE" &
+    JEKYLL_PID=$!
 }
 
 start_jekyll
 
 while true; do
-    inotifywait -q -e modify,move,create,delete $CONFIG_FILE
-    if [ $? -eq 0 ]; then
+    if ! kill -0 "$JEKYLL_PID" 2>/dev/null; then
+        jekyll_status=0
+        wait "$JEKYLL_PID" || jekyll_status=$?
+        JEKYLL_PID=""
+        exit "$jekyll_status"
+    fi
+
+    if inotifywait -q -t 1 -e modify,move,create,delete "$CONFIG_FILE"; then
         echo "Change detected to $CONFIG_FILE, restarting Jekyll"
-        jekyll_pid=$(pgrep -f jekyll)
-        kill -KILL $jekyll_pid
+        stop_jekyll
         start_jekyll
+    else
+        inotify_status=$?
+        if [ "$inotify_status" -ne 2 ]; then
+            exit "$inotify_status"
+        fi
     fi
 done
