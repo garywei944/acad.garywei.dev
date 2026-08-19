@@ -17,6 +17,7 @@ footer_text: >-
 keywords: gary, garywei944, guanghao, gary wei, academic-website, portfolio-website, al-folio # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://acad.garywei.dev # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -29,10 +30,21 @@ back_to_top: true # set to false to disable the back to top button
 # -----------------------------------------------------------------------------
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
+repo_theme_dark: dark # https://github.com/stats-organization/github-stats-extended/blob/master/packages/core/src/themes/README.md
+# Off by default: addresses are then split at build time so the HTML contains no
+# `user@host` and no `mailto:` for harvesters to scrape, and clicking one copies
+# it to the clipboard instead of opening a mail client.
+# See "Protecting email addresses from scrapers" in docs/CUSTOMIZE.md.
+protect_email: false
+
+# Off by default: the free public github-profile-trophy instance is disabled
+# (its Vercel deployment answers HTTP 402 / DEPLOYMENT_DISABLED), so every trophy
+# image 404s. The project itself is still open source and free — self-host it and
+# point external_services.github_profile_trophy_url at your instance, then set
+# enabled: true. See docs/CUSTOMIZE.md.
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -40,7 +52,7 @@ repo_trophies:
 # To use a different instance or service for displaying GitHub stats and trophies,
 # update these URLs. These are used in the repository templates.
 external_services:
-  github_readme_stats_url: https://github-readme-stats.vercel.app
+  github_readme_stats_url: https://github-stats-extended.vercel.app
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
 
 # -----------------------------------------------------------------------------
@@ -57,7 +69,7 @@ al_folio:
   distill:
     engine: distillpub-template
     source: al-org-dev/distill-template#al-folio
-    allow_remote_loader: true
+    allow_remote_loader: false
   features:
     cv:
       enabled: true
@@ -113,6 +125,8 @@ analytics:
   cronitor: 9a3fcaa1d6c5c654845b812a0b869346 # cronitor RUM analytics site ID (format: XXXXXXXXX)
   pirsch: y0eT6MWdOVqww1HwM4aavOMTYN9PaHVU # your Pirsch analytics site ID (length 32 characters)
   openpanel: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX)
+  cloudflare: # your Cloudflare Web Analytics beacon token (32 hex characters)
+enable_simple_analytics: false # Simple Analytics identifies a site by its domain, so it has no ID to set above
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: K1OdvLepLCpb8OEfNoo6iKo3uodFpG_bmnnlNALza5g # your google-site-verification ID (Google Search Console)
@@ -222,18 +236,16 @@ exclude:
   - .agents/
   - .claude/
   - .codex/
+  - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
-  - CONTRIBUTING.md
-  - CUSTOMIZE.md
+  - CLAUDE.md
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
   - docs/
-  - FAQ.md
   - Gemfile
   - Gemfile.lock
-  - INSTALL.md
   - LICENSE
   - lighthouse_results/
   - package.json
@@ -292,6 +304,9 @@ plugins:
   - al_math
   - al_comments
   - al_newsletter
+  - al_email_protect
+  - al_marimo
+  - al_rtl
 
 # Sitemap settings
 defaults:
@@ -635,10 +650,6 @@ third_party_libraries:
     url:
       js: "https://cdn.jsdelivr.net/npm/plotly.js@{{version}}/dist/plotly.min.js"
     version: "3.0.1"
-  polyfill:
-    url:
-      js: "https://cdnjs.cloudflare.com/polyfill/v{{version}}/polyfill.min.js?features=es6"
-    version: "3"
   pseudocode:
     integrity:
       css: "sha256-VwMV//xgBPDyRFVSOshhRhzJRDyBmIACniLPpeXNUdc="

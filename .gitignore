@@ -16,3 +16,7 @@ vendor
 .vscode
 output/playwright/
 test-results/
+
+# Python bytecode from bin/ helper scripts
+__pycache__/
+*.pyc
