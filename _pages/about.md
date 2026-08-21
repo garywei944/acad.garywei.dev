@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Machine Learning Engineer at <a href="https://www.bytedance.com/">ByteDance</a> · Former Research Assistant at <a href="https://relax-ml.cs.cornell.edu/team/">Cornell's Relax ML Lab</a>
+subtitle: MLE @ <a href="https://www.bytedance.com/">ByteDance</a> | ex-RA @ <a href="https://relax-ml.cs.cornell.edu/team/">Cornell Relax ML Lab</a>
 
 profile:
   align: right
