@@ -8,10 +8,43 @@
 set -euo pipefail
 
 tmp_dir="$(mktemp -d)"
+rtl_fixture="integration-rtl-fixture.md"
+marimo_fixture="integration-marimo-fixture.md"
 cleanup() {
+  rm -f "${rtl_fixture}" "${marimo_fixture}"
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+# Keep plugin coverage independent of the starter's public demo content. Personal
+# sites can remove the sample posts without weakening these integration checks.
+cat >"${rtl_fixture}" <<'EOF'
+---
+layout: page
+title: RTL integration fixture
+permalink: /__integration/rtl/
+lang: fa
+---
+
+RTL integration fixture.
+EOF
+
+cat >"${marimo_fixture}" <<'EOF'
+---
+layout: page
+title: marimo integration fixture
+permalink: /__integration/marimo/
+marimo: true
+---
+
+<div class="al-marimo-inline" markdown="1">
+
+```python
+print("marimo integration fixture")
+```
+
+</div>
+EOF
 
 build() {
   local name="$1"
@@ -30,8 +63,8 @@ fail() {
 
 default_site="$(build default)"
 
-rtl_page="${default_site}/blog/2022/rtl/index.html"
-[ -f "${rtl_page}" ] || fail "RTL demo post was not built"
+rtl_page="${default_site}/__integration/rtl/index.html"
+[ -f "${rtl_page}" ] || fail "RTL integration fixture was not built"
 
 # dir must sit on <html>, not on a wrapper: that is what the browser's bidi
 # algorithm and CSS logical properties key off.
@@ -49,8 +82,8 @@ grep -q 'assets/al_rtl/css/rtl.css' "${default_site}/index.html" && fail "home p
 
 # --- al_marimo --------------------------------------------------------------
 
-marimo_page="${default_site}/blog/2025/marimo/index.html"
-[ -f "${marimo_page}" ] || fail "marimo demo post was not built"
+marimo_page="${default_site}/__integration/marimo/index.html"
+[ -f "${marimo_page}" ] || fail "marimo integration fixture was not built"
 
 grep -q 'assets/al_marimo/js/marimo-snippets.js' "${marimo_page}" || fail "marimo post does not load the runtime"
 [ -f "${default_site}/assets/al_marimo/js/marimo-snippets.js" ] || fail "marimo runtime is referenced but not published"

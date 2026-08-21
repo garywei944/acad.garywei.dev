@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: MLE @ <a href="https://www.bytedance.com/">ByteDance</a> | ex-RA @ <a href='https://relax-ml.cs.cornell.edu/team/'>Cornell Relax ML Lab</a>
+subtitle: Machine Learning Engineer at <a href="https://www.bytedance.com/">ByteDance</a> · Former Research Assistant at <a href="https://relax-ml.cs.cornell.edu/team/">Cornell's Relax ML Lab</a>
 
 profile:
   align: right
@@ -27,14 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My research interests lie at the intersection of Machine Learning Systems, High Performance Computing, and AI for Science, where I leverage my mathematical and engineering talents to pioneer cutting-edge solutions.
-I was a Research Assistant at [Cornell Relax ML Lab](https://relax-ml.cs.cornell.edu/) advised by [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems.
-Grounded in mathematical principles, our work aims to expedite large-scale, high-performance machine learning systems that are efficient, parallel, and distributed in real-world settings.
-Parallel to this, I collaborate on AI-driven molecule generation with talented Ph.D. students.
+My research interests lie at the intersection of machine learning systems, distributed systems, high-performance computing, and AI for science. I am particularly interested in optimization, structured matrices, numerical linear algebra, scientific computing, and the design and correctness of distributed protocols. More broadly, I study how mathematical and systems principles can be used to build efficient, scalable, and reliable learning systems.
 
-My academic journey has led me to a Master of Engineering in Computer Science at Cornell University.
-Prior to this, I pursued dual B.S. degrees in Computer Science and Mathematics at the University of Massachusetts Amherst, complemented by a minor in Japanese.
-My specialization in Mathematics focused on Applied Math and Scientific Computing.
-Prior to my graduation, I engaged in research at the [UMass BioNLP Lab](https://bio-nlp.github.io/) under [Prof. Hong Yu](https://www.uml.edu/research/chords/faculty/yu-hong.aspx), concentrating on bio-medical and clinical NLP applications within Electronic Health Records.
+At [Cornell's Relax ML Lab](https://relax-ml.cs.cornell.edu/), I worked with [Prof. Chris De Sa](https://www.cs.cornell.edu/~cdesa/) on efficient machine learning algorithms and systems. My recent work has focused on coordination, consistency, and fault tolerance in large-scale distributed systems. I have also collaborated on generative modeling for scientific applications.
 
-_**Check out [garywei.dev](https://www.garywei.dev/) for my personal website!**_
+I received my M.Eng. in Computer Science from Cornell University and B.S. degrees in Computer Science and Mathematics from the University of Massachusetts Amherst. At UMass, I focused on applied mathematics and scientific computing and completed a minor in Japanese. I also worked with [Prof. Hong Yu](https://www.uml.edu/research/chords/faculty/yu-hong.aspx) in the [UMass BioNLP Lab](https://bio-nlp.github.io/) on biomedical and clinical NLP for electronic health records.
+
+My personal projects and other work are available at [garywei.dev](https://www.garywei.dev/).
