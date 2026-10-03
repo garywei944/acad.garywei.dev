@@ -140,7 +140,7 @@ robots: "index, follow" # options: "noindex, nofollow", "noindex, follow", "inde
 # -----------------------------------------------------------------------------
 
 blog_name: Blog # blog_name will be displayed in your blog page
-blog_description: I write on Machine Learning, Linux, and CTF.
+blog_description: I write on Machine Learning, GPU Programming, Linux, and CTF.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -351,6 +351,7 @@ jekyll-archives:
 
 display_tags: # these tags will be displayed on the front page of your blog
   - machine-learning
+  - gpu
   - linux
   - ctf
 display_categories: # these categories will be displayed on the front page of your blog
