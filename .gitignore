@@ -12,10 +12,9 @@ assets/libs/
 assets/rendercv/rendercv_output/*.typ
 al-folio-upgrade-report.md
 node_modules/
-vendor
-.vscode
 output/playwright/
 test-results/
+vendor
 
 # Python bytecode from bin/ helper scripts
 __pycache__/

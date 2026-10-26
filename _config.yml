@@ -229,9 +229,6 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  - .agents/
-  - .claude/
-  - .codex/
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -246,7 +243,7 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  # - _pages/about_einstein.md
+  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/

@@ -75,14 +75,17 @@ jobs:
 
       - name: Install build prerequisites 🔧
         run: |
-          sudo apt-get update && sudo apt-get install -y imagemagick inotify-tools
+          sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
 
-      - name: Run entry-point integration test 🚪
-        run: bash test/integration_entry_point.sh
+      - name: Run comments integration test 🧪
+        run: bash test/integration_comments.sh
 
       - name: Run plugin toggle integration test 🔌
         run: bash test/integration_plugin_toggles.sh
+
+      - name: Run distill integration test 📄
+        run: bash test/integration_distill.sh
 
       - name: Run bootstrap compatibility integration test 🧩
         run: bash test/integration_bootstrap_compat.sh
