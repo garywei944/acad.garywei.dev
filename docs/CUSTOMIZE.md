@@ -66,7 +66,7 @@ Here we will give you some tips on how to customize the website. One important t
     - [How it works](#how-it-works)
     - [Configuration](#configuration-1)
     - [Disable related posts for a specific post](#disable-related-posts-for-a-specific-post)
-    - [Additional configuration in \_config.yml](#additional-configuration-in-_configyml)
+    - [Additional configuration in _config.yml](#additional-configuration-in-_configyml)
   - [Managing publication display](#managing-publication-display)
   - [Adding a Google Calendar](#adding-a-google-calendar)
     - [Basic usage](#basic-usage)
@@ -844,6 +844,16 @@ There are several custom bibtex keywords that you can use to affect how the entr
 - `website`: Adds a "Website" button redirecting to the specified link
 
 In `v1.x`, bibliography buttons/layout runtime is gem-owned (`al_citations` + `al_folio_core`). For local customization, add a local override `_layouts/bib.liquid` in your site; for upstream/shared behavior changes, open a PR in the owning gem repo.
+
+To add something to an entry's venue line — a badge such as "Oral" or "Spotlight", say — you don't need to copy the whole layout. Create `_includes/hook/bib.liquid` in your site instead. The layout includes it for every entry, if it exists, just after building the venue text, with `entry` in scope; append to `entrytype` and the result is what's displayed:
+
+```liquid
+{%- if entry.key == 'einstein1905movement' -%}
+  {%- capture entrytype -%}{{ entrytype }} <span class="badge">Oral</span>{%- endcapture -%}
+{%- endif -%}
+```
+
+A hook is easier to keep working across gem updates than a full copy of `bib.liquid`, which `al-folio upgrade overrides audit` will flag as stale whenever the upstream layout changes.
 
 ## Changing theme color
 
